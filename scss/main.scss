@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+//###   Basic Variables   ###
+$baseColor: #168E33;
+//###   Basic setup   ###
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 80vw;
+    max-width: 1350px;
+    min-width: 360px;
+    margin: auto;
+}
+
+@import 'header.scss';
