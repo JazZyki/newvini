@@ -3,6 +3,21 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-size: 5vmin;
+  color: #168E33;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3vmin;
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+  margin: 2rem auto;
+}
+
 .wrapper {
   width: 80vw;
   max-width: 1350px;
@@ -24,11 +39,12 @@ body {
 
 #header {
   width: 100vw;
-  margin: 15px auto;
+  margin: 15px auto 0;
 }
 #header .topNavigation {
   background-color: #fff !important;
   width: 80vw;
+  max-width: 1350px;
   margin: auto;
 }
 #header .topNavigation .brandLogo img {
@@ -41,6 +57,12 @@ body {
 }
 #header .topNavigation .otherHeader .language {
   margin-left: 5vmin;
+}
+#header .topNavigation .otherHeader .language .czech {
+  color: #949494;
+}
+#header .topNavigation .otherHeader .language .czech:hover {
+  color: #555;
 }
 #header .topNavigation .otherHeader .language .czech::before {
   content: url("../img/flags/cz.svg");
@@ -88,6 +110,7 @@ body {
 }
 #header .mainMenu nav .container-fluid {
   width: 80vw;
+  max-width: 1350px;
 }
 #header .mainMenu nav .container-fluid .navbar-brand img {
   height: 30px;
@@ -118,6 +141,109 @@ body {
 }
 #header .mainMenu nav .container-fluid .nav-item:hover::before {
   width: 100%;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu a {
+  color: #949494;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu.show {
+  display: flex;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li {
+  display: flex;
+  flex-wrap: wrap;
+  width: 220px;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li .dropdown-item {
+  white-space: normal;
+  text-align: center;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li .sluzba1:before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  background-image: url("../img/s1.png");
+  background-position: top center;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li .sluzba2:before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  background-image: url("../img/s5.png");
+  background-position: top center;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li .sluzba3:before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  background-image: url("../img/s3.png");
+  background-position: top center;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li .sluzba4:before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  background-image: url("../img/s4.png");
+  background-position: top center;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li:hover a {
+  color: #168E33;
+  background-color: #fff;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li:hover a.sluzba2 {
+  color: #0093FF;
+}
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li:hover .sluzba1:before,
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li:hover .sluzba2:before,
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li:hover .sluzba3:before,
+#header .mainMenu nav .container-fluid .nav-item .largeMenu li:hover .sluzba4:before {
+  background-position: bottom center;
+}
+
+.mainContent .homeCarousel {
+  margin-bottom: 2rem;
+}
+.mainContent .homeCarousel .carousel-item {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.mainContent .homeCarousel .carousel-item.active {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.mainContent .homeCarousel .carousel-item .w-33 {
+  width: 32.5%;
+  display: inline-block !important;
+}
+.mainContent .homeCarousel .carousel-item .carousel-caption {
+  display: none !important;
+}
+.mainContent .homeCarousel .carousel-indicators {
+  bottom: -40px;
+}
+.mainContent .homeCarousel .carousel-control-next {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 25px);
+  right: 25px;
+  border-radius: 100%;
+}
+.mainContent .homeCarousel .carousel-control-prev {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 25px);
+  left: 25px;
+  border-radius: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

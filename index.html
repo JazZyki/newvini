@@ -25,99 +25,187 @@
 </head>
 
 <body>
-    <header id="header">
-        <!--<script>
-            $("#header").load("header.html");
-        </script>-->
-        <div class="row topNavigation">
-            <div class="col col-3 logo">
-                <a class="brandLogo" href="#"><img src="img/logo.png"></a>
+<header id="header">
+    <!--<script>
+    $("#header").load("header.html");
+    </script>-->
+    <div class="row topNavigation">
+        <div class="col col-3 logo">
+            <a class="brandLogo" href="#"><img src="img/logo.png"></a>
+        </div>
+        <div class="col col-9 otherHeader">
+            <div class="dropdown language">
+                <a class="nav-link dropdown-toggle czech" href="http://www.vinicars.cz" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Česká republika</a>
+                <ul class="dropdown-menu languageSelector" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item slovak" href="http://www.vinicars.cz">Slovenská republika</a></li>
+                    <li><a class="dropdown-item deutsch" href="http://www.vinicars.de">Deutsch</a></li>
+                    <li><a class="dropdown-item ukrain" href="http://www.vinicars.ru">Україна</a></li>
+                    <li><a class="dropdown-item english" href="http://www.vinicars.com">English</a></li>
+                    <li><a class="dropdown-item french" href="http://www.vinicars.com">Français</a></li>
+                </ul>
             </div>
-            <div class="col col-9 otherHeader">
-                <div class="dropdown language">
-                    <a class="nav-link dropdown-toggle czech" href="http://www.vinicars.cz" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Česká republika</a>
-                    <ul class="dropdown-menu languageSelector" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item slovak" href="http://www.vinicars.cz">Slovenská republika</a></li>
-                        <li><a class="dropdown-item deutsch" href="http://www.vinicars.de">Deutsch</a></li>
-                        <li><a class="dropdown-item ukrain" href="http://www.vinicars.ru">Україна</a></li>
-                        <li><a class="dropdown-item english" href="http://www.vinicars.com">English</a></li>
-                        <li><a class="dropdown-item french" href="http://www.vinicars.com">Français</a></li>
+            <div class="">
+                <button type="button" class="btn btn-danger" title="Zavolejte nám kdykoli na naši bezplatnou linku">Zavolejte nám zdarma:&nbsp;&nbsp;<span>800 01 01 02</span></button>
+            </div>
+            <div class="">
+                <button type="button" class="btn btn-success">Orientační ceník</button>
+            </div>
+        </div>
+    </div>
+    <section class="mainMenu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/home.svg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Služby
+                            </a>
+                            <ul class="dropdown-menu largeMenu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item sluzba1" href="#">Oprava karoserie bez lakování (PDR)</a></li>
+                                <li><a class="dropdown-item sluzba2" href="#">Opravy po kroupách a krupobití (PDR)</a></li>
+                                <li><a class="dropdown-item sluzba3" href="#">Expresní oprava laku na počkání</a></li>
+                                <li><a class="dropdown-item sluzba4" href="#">Vyřízení pojistné události ZDARMA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Ceník</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fotogalerie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recenze</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Společnost</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="">
-                    <button type="button" class="btn btn-danger" title="Zavolejte nám kdykoli na naši bezplatnou linku">Zavolejte nám zdarma:&nbsp;&nbsp;<span>800 01 01 02</span></button>
+            </div>
+        </nav>
+        <!-- END nav -->
+    </section>
+</header>
+<div class="mainContent">
+    <main role="main">
+        <div class="fullWidth">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide homeCarousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="">
-                    <button type="button" class="btn btn-success">Orientační ceník</button>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="100000">
+                        <img src="img/porovnani/1.jpg" class="d-block w-33" alt="...">
+                        <img src="img/porovnani/2.jpg" class="d-block w-33" alt="...">
+                        <img src="img/porovnani/3.jpg" class="d-block w-33" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/porovnani/4.jpg" class="d-block w-33" alt="...">
+                        <img src="img/porovnani/5.jpg" class="d-block w-33" alt="...">
+                        <img src="img/porovnani/6.jpg" class="d-block w-33" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/porovnani/7.jpg" class="d-block w-33" alt="...">
+                        <img src="img/porovnani/8.jpg" class="d-block w-33" alt="...">
+                        <img src="img/porovnani/9.jpg" class="d-block w-33" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h1 class="mainHead">Opravy po krupobití po celé ČR</h1>
+            <h2 class="leadHead">Máte promáčkliny nebo důlky v karoserii? Vrátíme vás v čase!<br>Opravíme vaši karoserii bez lakování, rychle a šetrně <a href="#">metodou PDR</a>.</h2>
+        </div>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col col-9 col-md-12">
+
+
+                    V současné době bude probíhat likvidace pojistných události po krupobití v rámci oprav metodou PDR:
+
+                    Autocentrum hm, s.r.o
+                    U Nemocnice 3137/4, 690 02 Břeclav
+
+                    BONO auto, a.s.
+                    Malostranská 579, 742 42 Šenov u Nového Jičína
+
+                    Autocentrum K.E.I. GROUP s.r.o
+                    Žarošická 4308/21, 628 00 Brno, Židenice
+
+                    AGROTEC, a.s.
+                    Brněnská 12/74, 693 01 Hustopeče
+                    Chrlická 1153, 644 42, Modřice
+                    Lidická 123, 690 02, Břeclav
+
+                    SAMOHÝL MOTOR a.s.
+                    tř. Kosmonautů 846/2, 779 00 Olomouc
+                    tř.Tomáše Bati 642, 763 02, Zlín
+                    Štěpánská 383, Vsetín
+
+                    CB Auto, a.s.
+                    Soběslavská 2985, 390 05, Tábor
+                    Dr. Milady Horákové 1477, 370 05 České Budějovice
+                    Budějovická 166 , 381 01 Český Krumlov
+
+
+                    Poškodili váš vůz kroupy?
+                    Jsme tu pro vás, volejte zdarma: 800 01 01 04
+                    Aktuálně likvidujeme škody v
+                    Autosalon Jiří Souček s.r.o, Jiráskovo předměstí 899/III, 377 01 J. Hradec přímý kontakt autosalonu: 606740411, 602229001
+                    CB AUTO a.s. M. Horákové 1477, 370 05 České Budějovice
+                    CB Auto a.s, Soběslavská 2985, Tábor
+                    SAMOHÝL MOTOR a.s., tř. Tomáše Bati 623, 763 02 Zlín
+                    Rz Auto K. H. Máchy 415, 672 01 Moravský Krumlov
+                    Peugeot Auto Kalný s.r.o. Plzeňská 872, 339 01 Klatovy
+
+                    Vyřídíme pojistnou událost za vás zdarma
+
+                </div>
+                <div class="col col-3 col-md-12">
+                    Tady bude ten šílenej side panel
                 </div>
             </div>
         </div>
-        <section class="mainMenu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="img/home.svg"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Služby
-                            </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Ceník</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Fotogalerie</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Recenze</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Společnost</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Kontakt</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- END nav -->
-        </section>
-    </header>
-    <div class="wrapper">
+    </main>
+    <!-- /.container -->
 
-        <main role="main" class="container">
-
-            <div class="starter-template">
-                <h1>Bootstrap starter template</h1>
-                <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-            </div>
-
-        </main>
-        <!-- /.container -->
-
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script>
-            window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="js/main.js"></script>
-    </div>
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</div>
 </body>
 
 </html>

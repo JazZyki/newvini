@@ -1,10 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 //###   Basic Variables   ###
+// COLORS
 $baseColor: #168E33;
 $redColor: red;
+$blueColor: #0093FF;
+$grey: #949494;
+$grey2: #555;
+// OTHER
+$max-width: 1350px;
 //###   Basic setup   ###
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 5vmin;
+    color: $baseColor;
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    font-size: 3vmin;
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    margin: 2rem auto;
 }
 
 .wrapper {
@@ -27,3 +47,4 @@ body {
 }
 
 @import 'header.scss';
+@import 'home.scss';
