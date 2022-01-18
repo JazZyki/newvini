@@ -10,4 +10,114 @@ body {
   margin: auto;
 }
 
+.btn-danger {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #168E33;
+  border-color: #168E33;
+}
+
+#header {
+  width: 100vw;
+  margin: 15px auto;
+}
+#header .topNavigation {
+  background-color: #fff !important;
+  width: 80vw;
+  margin: auto;
+}
+#header .topNavigation .brandLogo img {
+  width: 25vmin;
+}
+#header .topNavigation .otherHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .topNavigation .otherHeader .language {
+  margin-left: 5vmin;
+}
+#header .topNavigation .otherHeader .language .czech::before {
+  content: url("../img/flags/cz.svg");
+  width: 25px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  height: 19px;
+}
+#header .topNavigation .otherHeader .language .languageSelector .dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+#header .topNavigation .otherHeader .language .languageSelector .slovak::before,
+#header .topNavigation .otherHeader .language .languageSelector .deutsch::before,
+#header .topNavigation .otherHeader .language .languageSelector .ukrain::before,
+#header .topNavigation .otherHeader .language .languageSelector .english::before,
+#header .topNavigation .otherHeader .language .languageSelector .french::before {
+  width: 25px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  height: 19px;
+}
+#header .topNavigation .otherHeader .language .languageSelector .slovak::before {
+  content: url("../img/flags/sk.svg");
+}
+#header .topNavigation .otherHeader .language .languageSelector .deutsch::before {
+  content: url("../img/flags/de.svg");
+}
+#header .topNavigation .otherHeader .language .languageSelector .ukrain::before {
+  content: url("../img/flags/ua.svg");
+}
+#header .topNavigation .otherHeader .language .languageSelector .english::before {
+  content: url("../img/flags/gb.svg");
+}
+#header .topNavigation .otherHeader .language .languageSelector .french::before {
+  content: url("../img/flags/fr.svg");
+}
+#header .mainMenu {
+  margin-top: 15px;
+}
+#header .mainMenu nav {
+  background: #0b4418;
+  background: linear-gradient(0deg, #0b4418 0%, #168e33 100%);
+}
+#header .mainMenu nav .container-fluid {
+  width: 80vw;
+}
+#header .mainMenu nav .container-fluid .navbar-brand img {
+  height: 30px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+#header .mainMenu nav .container-fluid .navbar-brand img:hover {
+  opacity: 1;
+}
+#header .mainMenu nav .container-fluid .nav-item {
+  margin: 0 10px;
+  position: relative;
+}
+#header .mainMenu nav .container-fluid .nav-item a {
+  color: #fff;
+  text-transform: uppercase;
+}
+#header .mainMenu nav .container-fluid .nav-item::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 0;
+  display: inline-block;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+#header .mainMenu nav .container-fluid .nav-item:hover::before {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

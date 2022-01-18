@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 //###   Basic Variables   ###
 $baseColor: #168E33;
+$redColor: red;
 //###   Basic setup   ###
 body {
     font-family: 'Roboto', sans-serif;
@@ -11,6 +12,18 @@ body {
     max-width: 1350px;
     min-width: 360px;
     margin: auto;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: $redColor;
+    border-color: $redColor;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: $baseColor;
+    border-color: $baseColor;
 }
 
 @import 'header.scss';

@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--TODO: meta keywords, atd.-->
-
     <meta name="description" content="oprava karoserie, metoda pdr, vinicars">
     <meta name="author" content="Jakub Zykl">
     <link rel="icon" href="img/favicon.ico">
 
     <title>Opravy po krupobití po celé ČR - VINICARS</title>
-
+    <!--TODO: canonicla links-->
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
@@ -20,48 +19,82 @@
     <!-- Custom styles -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Import jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
+    <header id="header">
+        <!--<script>
+            $("#header").load("header.html");
+        </script>-->
+        <div class="row topNavigation">
+            <div class="col col-3 logo">
+                <a class="brandLogo" href="#"><img src="img/logo.png"></a>
+            </div>
+            <div class="col col-9 otherHeader">
+                <div class="dropdown language">
+                    <a class="nav-link dropdown-toggle czech" href="http://www.vinicars.cz" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Česká republika</a>
+                    <ul class="dropdown-menu languageSelector" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item slovak" href="http://www.vinicars.cz">Slovenská republika</a></li>
+                        <li><a class="dropdown-item deutsch" href="http://www.vinicars.de">Deutsch</a></li>
+                        <li><a class="dropdown-item ukrain" href="http://www.vinicars.ru">Україна</a></li>
+                        <li><a class="dropdown-item english" href="http://www.vinicars.com">English</a></li>
+                        <li><a class="dropdown-item french" href="http://www.vinicars.com">Français</a></li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                </div>
+                <div class="">
+                    <button type="button" class="btn btn-danger" title="Zavolejte nám kdykoli na naši bezplatnou linku">Zavolejte nám zdarma:&nbsp;&nbsp;<span>800 01 01 02</span></button>
+                </div>
+                <div class="">
+                    <button type="button" class="btn btn-success">Orientační ceník</button>
                 </div>
             </div>
-        </nav>
+        </div>
+        <section class="mainMenu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/home.svg"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Služby
+                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Ceník</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fotogalerie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recenze</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Společnost</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- END nav -->
+        </section>
     </header>
     <div class="wrapper">
 
@@ -83,6 +116,7 @@
             window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
     </div>
 </body>
 
