@@ -4,6 +4,7 @@
 $baseColor: #168E33;
 $redColor: red;
 $blueColor: #0093FF;
+$darkBlueColor: #0068B5;
 $grey: #949494;
 $grey2: #555;
 // OTHER
@@ -11,6 +12,8 @@ $max-width: 1350px;
 //###   Basic setup   ###
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: #f5f5f5;
 }
 
 h1 {
@@ -26,7 +29,15 @@ h2 {
     font-weight: bold;
     margin: 2rem auto;
 }
-
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
 .wrapper {
     width: 80vw;
     max-width: 1350px;
@@ -44,6 +55,10 @@ h2 {
     color: #fff;
     background-color: $baseColor;
     border-color: $baseColor;
+}
+
+.whiteCol {
+    color: #ffffff;
 }
 
 @import 'header.scss';
