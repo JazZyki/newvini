@@ -1,0 +1,72 @@
+.smluvniPartneri {
+    margin-top: 3rem;
+    justify-content: center;
+
+    #czechMap {
+        position: relative;
+        width: 500px;
+        height: 293px;
+        background-image: url('../img/mapa/mapa_cr.png');
+        display: none;
+    }
+
+    @media only screen and (min-width: 570px) {
+        #czechMap {
+            display: block;
+        }
+
+        #czechMapLinks {
+            display: none;
+        }
+    }
+
+    .czechMap-link {
+        color: #168E33;
+        text-decoration: none;
+    }
+
+    #czechMap-overlap {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        border: none;
+    }
+
+    .map-contacts {
+        margin: 30px 0;
+    }
+
+    .map-contacts-office {
+        display: none;
+        margin-bottom: 30px;
+    }
+
+    .contacts-row {
+
+    }
+
+    .office-contact {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        line-height: 20px;
+        margin: 15px 0;
+        padding: 0 20px 0 0;
+    }
+
+    .office-contact h3 {
+        line-height: 25px;
+    }
+
+    @media only screen and (min-width: 650px) {
+        .office-contact {
+            width: calc(49.5% - 20px);
+        }
+    }
+
+    .map-contacts-hr {
+        display: none;
+        border-top: 1px solid #168E33;
+        margin-bottom: 25px;
+    }
+}

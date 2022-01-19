@@ -37,4 +37,138 @@
             border-radius: 100%;
         }
     }
+    .likvidaceOdstavce {
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        background-color: $blueColor;
+        padding: 2rem;
+        p {
+            margin-bottom: 1.2rem;
+        }
+    }
+    .vyridimeMy {
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        background-color: $darkBlueColor;
+        padding: 1rem 2rem;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+    .text {
+        background-color: #fff;
+        padding: 2rem;
+        margin: 1rem 0;
+        h2 {
+            margin: 0 auto 1rem;
+            border-bottom: 2px solid;
+        }
+    }
+    .procNam {
+        ul {
+            -webkit-column-count: 1;
+            -moz-column-count: 2;
+            column-count: 2;
+            -webkit-column-gap: 4rem;
+            -moz-column-gap: 4rem;
+            column-gap: 4rem;
+            li {
+                font-size: 1.2rem;
+                padding-left: 28px;
+                margin-bottom: .5rem;
+                &::before {
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    background-image: url('../img/checked.svg');
+                    background-size: contain;
+                    margin-right: -18px;
+                    position: relative;
+                    left: -28px;
+                }
+            }
+        }
+    }
+    .videoContainer {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%!important;
+            height: 100%!important;
+        }
+    }
+    .pravySloupec {
+        display: flex;
+        justify-content: center;
+        align-content: start;
+        flex-wrap: wrap;
+        .vyhody {
+            margin-top: 2rem;
+            width: 100%;
+            position: relative;
+            .vyhoda {
+                width: 80%;
+                margin: auto;
+                background: rgb(85,85,85);
+                background: linear-gradient(0deg, rgba(85,85,85,1) 0%, rgba(148,148,148,1) 100%);
+                padding: 1rem 2rem;
+                text-align: center;
+                position: relative;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+                &.vyhoda1,
+                &.vyhoda2 {
+                    &::after {
+                        content: '';
+                        width: 30px;
+                        height: 30px;
+                        background: rgb(148,148,148);
+                        background: linear-gradient(135deg, rgba(85,85,85,1) 50%, rgba(68,68,68,1) 100%);
+                        display: inline-block;
+                        position: absolute;
+                        bottom: -.9rem;
+                        left: calc(50% - 15px);
+                        transform: rotate(45deg);
+                        z-index: -1;
+                    }
+                }
+                &.vyhoda2,
+                &.vyhoda3 {
+                    margin-top: 1.3rem;
+                }
+                &.vyhoda3 {
+                    background: rgb(11, 68, 24);
+                    background: linear-gradient(0deg, rgba(11, 68, 24, 1) 0%, rgba(22, 142, 51, 1) 100%);
+                }
+            }
+        }
+        .pojistovny {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 3rem;
+            img {
+                margin-bottom: 3rem;
+                filter: grayscale(.5);
+                transition: .3s;
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
 }
