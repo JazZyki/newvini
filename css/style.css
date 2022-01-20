@@ -3,6 +3,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   background-color: #f5f5f5;
+  font-size: 15px;
+  background-color: #f5f5f5;
 }
 
 h1 {
@@ -18,6 +20,17 @@ h2 {
   color: grey;
   font-weight: bold;
   margin: 2rem auto;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 h3 {
@@ -48,6 +61,22 @@ p {
   color: #fff;
   background-color: #168E33;
   border-color: #168E33;
+}
+
+.whiteCol {
+  color: #ffffff;
+}
+
+.greenCol {
+  color: #168E33;
+}
+
+.whiteCol {
+  color: #ffffff;
+}
+
+.whiteCol {
+  color: #ffffff;
 }
 
 .whiteCol {
@@ -266,6 +295,308 @@ p {
   top: calc(50% - 25px);
   left: 25px;
   border-radius: 100%;
+}
+.mainContent .likvidaceOdstavce {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  background-color: #0093FF;
+  padding: 2rem;
+}
+.mainContent .likvidaceOdstavce p {
+  margin-bottom: 1.2rem;
+}
+.mainContent .vyridimeMy {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  background-color: #0068B5;
+  padding: 1rem 2rem;
+}
+.mainContent .vyridimeMy a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.mainContent .text {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+.mainContent .text h2 {
+  margin: 0 auto 1rem;
+  border-bottom: 2px solid;
+}
+.mainContent .procNam ul {
+  -webkit-column-count: 1;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 4rem;
+  -moz-column-gap: 4rem;
+  column-gap: 4rem;
+}
+.mainContent .procNam ul li {
+  font-size: 1.2rem;
+  padding-left: 28px;
+  margin-bottom: 0.5rem;
+}
+.mainContent .procNam ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("../img/checked.svg");
+  background-size: contain;
+  margin-right: -18px;
+  position: relative;
+  left: -28px;
+}
+.mainContent .videoContainer {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+.mainContent .videoContainer .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.mainContent .pravySloupec {
+  display: flex;
+  justify-content: center;
+  align-content: start;
+  flex-wrap: wrap;
+}
+.mainContent .pravySloupec .vyhody {
+  margin-top: 2rem;
+  width: 100%;
+  position: relative;
+}
+.mainContent .pravySloupec .vyhody .vyhoda {
+  width: 80%;
+  margin: auto;
+  background: #555555;
+  background: linear-gradient(0deg, #555555 0%, #949494 100%);
+  padding: 1rem 2rem;
+  text-align: center;
+  position: relative;
+}
+.mainContent .pravySloupec .vyhody .vyhoda a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.mainContent .pravySloupec .vyhody .vyhoda.vyhoda1::after, .mainContent .pravySloupec .vyhody .vyhoda.vyhoda2::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #949494;
+  background: linear-gradient(135deg, #555555 50%, #444444 100%);
+  display: inline-block;
+  position: absolute;
+  bottom: -0.9rem;
+  left: calc(50% - 15px);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.mainContent .pravySloupec .vyhody .vyhoda.vyhoda2, .mainContent .pravySloupec .vyhody .vyhoda.vyhoda3 {
+  margin-top: 1.3rem;
+}
+.mainContent .pravySloupec .vyhody .vyhoda.vyhoda3 {
+  background: #0b4418;
+  background: linear-gradient(0deg, #0b4418 0%, #168e33 100%);
+}
+.mainContent .pravySloupec .pojistovny {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.mainContent .pravySloupec .pojistovny img {
+  margin-bottom: 3rem;
+  filter: grayscale(0.5);
+  transition: 0.3s;
+}
+.mainContent .pravySloupec .pojistovny img:hover {
+  filter: grayscale(0);
+}
+
+.smluvniPartneri {
+  margin-top: 3rem;
+  justify-content: center;
+}
+.smluvniPartneri #czechMap {
+  position: relative;
+  width: 500px;
+  height: 293px;
+  background-image: url("../img/mapa/mapa_cr.png");
+  display: none;
+}
+@media only screen and (min-width: 570px) {
+  .smluvniPartneri #czechMap {
+    display: block;
+  }
+  .smluvniPartneri #czechMapLinks {
+    display: none;
+  }
+}
+.smluvniPartneri .czechMap-link {
+  color: #168E33;
+  text-decoration: none;
+}
+.smluvniPartneri #czechMap-overlap {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: none;
+}
+.smluvniPartneri .map-contacts {
+  margin: 30px 0;
+}
+.smluvniPartneri .map-contacts-office {
+  display: none;
+  margin-bottom: 30px;
+}
+.smluvniPartneri .office-contact {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  line-height: 20px;
+  margin: 15px 0;
+  padding: 0 20px 0 0;
+}
+.smluvniPartneri .office-contact h3 {
+  line-height: 25px;
+}
+@media only screen and (min-width: 650px) {
+  .smluvniPartneri .office-contact {
+    width: calc(49.5% - 20px);
+  }
+}
+.smluvniPartneri .map-contacts-hr {
+  display: none;
+  border-top: 1px solid #168E33;
+  margin-bottom: 25px;
+}
+.mainContent .likvidaceOdstavce {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  background-color: #0093FF;
+  padding: 2rem;
+}
+.mainContent .likvidaceOdstavce p {
+  margin-bottom: 1.2rem;
+}
+.mainContent .vyridimeMy {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  background-color: #0068B5;
+  padding: 1rem 2rem;
+}
+.mainContent .vyridimeMy a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.mainContent .text {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+.mainContent .text h2 {
+  margin: 0 auto 1rem;
+  border-bottom: 2px solid;
+}
+.mainContent .procNam ul {
+  -webkit-column-count: 1;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 4rem;
+  -moz-column-gap: 4rem;
+  column-gap: 4rem;
+}
+.mainContent .procNam ul li {
+  font-size: 1.2rem;
+  padding-left: 28px;
+  margin-bottom: 0.5rem;
+}
+.mainContent .procNam ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("../img/checked.svg");
+  background-size: contain;
+  margin-right: -18px;
+  position: relative;
+  left: -28px;
+}
+.mainContent .videoContainer {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+.mainContent .videoContainer .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.mainContent .pravySloupec {
+  display: flex;
+  justify-content: center;
+  align-content: start;
+  flex-wrap: wrap;
+}
+.mainContent .pravySloupec .vyhody {
+  margin-top: 2rem;
+  width: 100%;
+  position: relative;
+}
+.mainContent .pravySloupec .vyhody .vyhoda {
+  width: 80%;
+  margin: auto;
+  background: #555555;
+  background: linear-gradient(0deg, #555555 0%, #949494 100%);
+  padding: 1rem 2rem;
+  text-align: center;
+  position: relative;
+}
+.mainContent .pravySloupec .vyhody .vyhoda a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.mainContent .pravySloupec .vyhody .vyhoda.vyhoda1::after, .mainContent .pravySloupec .vyhody .vyhoda.vyhoda2::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #949494;
+  background: linear-gradient(135deg, #555555 50%, #444444 100%);
+  display: inline-block;
+  position: absolute;
+  bottom: -0.9rem;
+  left: calc(50% - 15px);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.mainContent .pravySloupec .vyhody .vyhoda.vyhoda2, .mainContent .pravySloupec .vyhody .vyhoda.vyhoda3 {
+  margin-top: 1.3rem;
+}
+.mainContent .pravySloupec .vyhody .vyhoda.vyhoda3 {
+  background: #0b4418;
+  background: linear-gradient(0deg, #0b4418 0%, #168e33 100%);
 }
 .mainContent .likvidaceOdstavce {
   color: #fff;
