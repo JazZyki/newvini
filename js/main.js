@@ -1,3 +1,4 @@
+/* Function(s) to expand top menu */
 (function($) {
 
     "use strict";
@@ -27,31 +28,31 @@
 
 })(jQuery);
 
-
-$(function () {
+/* Function to clickable map work properly */
+$(function() {
     var czechMapOverlap = $('#czechMap-overlap');
 
     // map hover
-    $('.czechMap-area').hover(function () {
+    $('.czechMap-area').hover(function() {
 
         czechMapOverlap.attr('src', $(this).attr('data-img'));
         //czechMapOverlap.hide(0).stop(false, true);
         czechMapOverlap.show();
 
-    }, function () {
+    }, function() {
 
         czechMapOverlap.attr('src', './img/mapa/none.png');
         czechMapOverlap.show(0);
     });
 
-    $('.czechMap-area, .czechMap-link').click(function (e) {
+    $('.czechMap-area, .czechMap-link').click(function(e) {
         e.preventDefault();
         czechMapOverlap.attr('src', $(this).attr('data-img'));
 
         var area = $(this).attr('data-title');
         $('.map-contacts-title').empty().text(area);
         var officeKey = $(this).attr('data-target');
-        $('.map-contacts-hr').show();
+        //$('.map-contacts-hr').show();
 
         $('.map-contacts-office').hide();
         $('.' + officeKey).show();

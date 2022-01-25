@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--TODO: meta keywords, atd.-->
+    <meta name="description" content="oprava karoserie, metoda pdr, vinicars">
+    <meta name="author" content="Jakub Zykl">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Opravy promáčklin a rovnání karoserie, PDR - VINICARS</title>
+    <!--TODO: canonicla links-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Import jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body class="cenik">
+    <header id="header">
+        <!--<script>
+    $("#header").load("header.html");
+    </script>-->
+        <div class="row topNavigation">
+            <div class="col col-3 logo">
+                <a class="brandLogo" href="index.html"><img src="img/logo.png"></a>
+            </div>
+            <div class="col col-9 otherHeader">
+                <div class="dropdown language">
+                    <a class="nav-link dropdown-toggle czech" href="http://www.vinicars.cz" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Česká republika</a>
+                    <ul class="dropdown-menu languageSelector" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item slovak" href="http://www.vinicars.cz">Slovenská republika</a></li>
+                        <li><a class="dropdown-item deutsch" href="http://www.vinicars.de">Deutsch</a></li>
+                        <li><a class="dropdown-item ukrain" href="http://www.vinicars.ru">Україна</a></li>
+                        <li><a class="dropdown-item english" href="http://www.vinicars.com">English</a></li>
+                        <li><a class="dropdown-item french" href="http://www.vinicars.com">Français</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <button type="button" class="btn btn-danger" title="Zavolejte nám kdykoli na naši bezplatnou linku">Zavolejte nám zdarma:&nbsp;&nbsp;<span>800 01 01 02</span></button>
+                </div>
+                <div class="">
+                    <button type="button" class="btn btn-success">Orientační ceník</button>
+                </div>
+            </div>
+        </div>
+        <section class="mainMenu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/home.svg"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Služby
+                            </a>
+                                <ul class="dropdown-menu largeMenu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item sluzba1" href="#">Oprava karoserie bez lakování (PDR)</a></li>
+                                    <li><a class="dropdown-item sluzba2" href="#">Opravy po kroupách a krupobití (PDR)</a></li>
+                                    <li><a class="dropdown-item sluzba3" href="#">Expresní oprava laku na počkání</a></li>
+                                    <li><a class="dropdown-item sluzba4" href="#">Vyřízení pojistné události ZDARMA</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="cenik.html">Ceník</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fotogalerie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recenze</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Společnost</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- END nav -->
+        </section>
+    </header>
+    <div class="mainContent">
+        <main role="main">
+            <div class="wrapper">
+                <h1 class="greenCol">Orientační ceník</h1>
+                <h2 class="greyCol"><a href="/kontakty" title="Přejít na kontakt">Rezervujte si prohlídku</a> vašeho vozu ZDARMA a získejte orientační cenu opravy.<br> Ušetřete s námi až 60 % času i financí oproti tradiční opravě!</h2>
+                <!-- U nás se vám nestane, že byste cenu opravy neznali předem.  -->
+                <ul class="nav nav-pills mb-3 tabSelect" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Opravy po kroupách</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Opravy promáčklin</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <h3 class="greenCol center underline">Opravy po kroupách</h3>
+                        <table class="table table-striped table-hover table-success">
+                            <thead>
+                                <th colspan="1" rowspan="2">Počet důlků</th>
+                                <th colspan="3">Kapota, střecha</th>
+                                <th colspan="3">Blatník, dveře</th>
+                                <th colspan="3">Boční rám, kufr</th>
+                            </thead>
+                            <tbody>
+                                <tr class="head">
+                                    <th></th>
+                                    <th>20 mm</th>
+                                    <th>30 mm</th>
+                                    <th>40 mm</th>
+                                    <th>20 mm</th>
+                                    <th>30 mm</th>
+                                    <th>40 mm</th>
+                                    <th>20 mm</th>
+                                    <th>30 mm</th>
+                                    <th>40 mm</th>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <td>598</td>
+                                    <td>642</td>
+                                    <td>742</td>
+                                    <td>677</td>
+                                    <td>728</td>
+                                    <td>841</td>
+                                    <td>795</td>
+                                    <td>854</td>
+                                    <td>987</td>
+                                </tr>
+                                <tr>
+                                    <th>2&ndash;3</th>
+                                    <td>1076</td>
+                                    <td>1156</td>
+                                    <td>1336</td>
+                                    <td>1219</td>
+                                    <td>1310</td>
+                                    <td>1513</td>
+                                    <td>1431</td>
+                                    <td>1538</td>
+                                    <td>1776</td>
+                                </tr>
+                                <tr>
+                                    <th>4&ndash;6</th>
+                                    <td>1614</td>
+                                    <td>1734</td>
+                                    <td>2003</td>
+                                    <td>1829</td>
+                                    <td>1965</td>
+                                    <td>2270</td>
+                                    <td>2147</td>
+                                    <td>2307</td>
+                                    <td>2665</td>
+                                </tr>
+                                <tr>
+                                    <th>7&ndash;10</th>
+                                    <td>2373</td>
+                                    <td>2550</td>
+                                    <td>2945</td>
+                                    <td>2688</td>
+                                    <td>2889</td>
+                                    <td>3337</td>
+                                    <td>3156</td>
+                                    <td>3391</td>
+                                    <td>3917</td>
+                                </tr>
+                                <tr>
+                                    <th>11&ndash;15</th>
+                                    <td>2705</td>
+                                    <td>2907</td>
+                                    <td>3357</td>
+                                    <td>3065</td>
+                                    <td>3293</td>
+                                    <td>3804</td>
+                                    <td>3598</td>
+                                    <td>3866</td>
+                                    <td>4465</td>
+                                </tr>
+                                <tr>
+                                    <th>16&ndash;20</th>
+                                    <td>3057</td>
+                                    <td>3284</td>
+                                    <td>3794</td>
+                                    <td>3463</td>
+                                    <td>3721</td>
+                                    <td>4298</td>
+                                    <td>4066</td>
+                                    <td>4369</td>
+                                    <td>5046</td>
+                                </tr>
+                                <tr>
+                                    <th>21&ndash;25</th>
+                                    <td>3332</td>
+                                    <td>3580</td>
+                                    <td>4135</td>
+                                    <td>3775</td>
+                                    <td>4056</td>
+                                    <td>4685</td>
+                                    <td>4432</td>
+                                    <td>4762</td>
+                                    <td>5500</td>
+                                </tr>
+                                <tr>
+                                    <th>26&ndash;30</th>
+                                    <td>3632</td>
+                                    <td>3902</td>
+                                    <td>4507</td>
+                                    <td>4115</td>
+                                    <td>4421</td>
+                                    <td>5107</td>
+                                    <td>4831</td>
+                                    <td>5191</td>
+                                    <td>5995</td>
+                                </tr>
+                                <tr>
+                                    <th>31&ndash;40</th>
+                                    <td>4068</td>
+                                    <td>4371</td>
+                                    <td>5048</td>
+                                    <td>4609</td>
+                                    <td>4952</td>
+                                    <td>5719</td>
+                                    <td>5410</td>
+                                    <td>5813</td>
+                                    <td>6715</td>
+                                </tr>
+                                <tr>
+                                    <th>41&ndash;50</th>
+                                    <td>4556</td>
+                                    <td>4895</td>
+                                    <td>5654</td>
+                                    <td>5162</td>
+                                    <td>5546</td>
+                                    <td>6406</td>
+                                    <td>6060</td>
+                                    <td>6511</td>
+                                    <td>7520</td>
+                                </tr>
+                                <tr>
+                                    <th>51&ndash;60</th>
+                                    <td>5467</td>
+                                    <td>5874</td>
+                                    <td>6785</td>
+                                    <td>6194</td>
+                                    <td>6655</td>
+                                    <td>7687</td>
+                                    <td>7272</td>
+                                    <td>7813</td>
+                                    <td>9024</td>
+                                </tr>
+                                <tr>
+                                    <th>61&ndash;80</th>
+                                    <td>6560</td>
+                                    <td>7049</td>
+                                    <td>8141</td>
+                                    <td>7433</td>
+                                    <td>7986</td>
+                                    <td>9224</td>
+                                    <td>8726</td>
+                                    <td>9376</td>
+                                    <td>10829</td>
+                                </tr>
+                                <tr>
+                                    <th>81&ndash;100</th>
+                                    <td>7652</td>
+                                    <td>8222</td>
+                                    <td>9496</td>
+                                    <td>8669</td>
+                                    <td>9315</td>
+                                    <td>10759</td>
+                                    <td>10178</td>
+                                    <td>10936</td>
+                                    <td>12631</td>
+                                </tr>
+                                <tr>
+                                    <th>101&ndash;120</th>
+                                    <td>8358</td>
+                                    <td>8981</td>
+                                    <td>10373</td>
+                                    <td>9470</td>
+                                    <td>10176</td>
+                                    <td>11753</td>
+                                    <td>11118</td>
+                                    <td>11946</td>
+                                    <td>13798</td>
+                                </tr>
+                                <tr>
+                                    <th>121&ndash;140</th>
+                                    <td>8684</td>
+                                    <td>9331</td>
+                                    <td>10778</td>
+                                    <td>9839</td>
+                                    <td>10572</td>
+                                    <td>12211</td>
+                                    <td>11551</td>
+                                    <td>12412</td>
+                                    <td>14336</td>
+                                </tr>
+                                <tr>
+                                    <th>141&ndash;160</th>
+                                    <td>9639</td>
+                                    <td>10358</td>
+                                    <td>11963</td>
+                                    <td>10922</td>
+                                    <td>11735</td>
+                                    <td>13554</td>
+                                    <td>12822</td>
+                                    <td>13777</td>
+                                    <td>15913</td>
+                                </tr>
+                                <tr>
+                                    <th>161&ndash;180</th>
+                                    <td>9983</td>
+                                    <td>10727</td>
+                                    <td>12390</td>
+                                    <td>11311</td>
+                                    <td>12154</td>
+                                    <td>14037</td>
+                                    <td>13279</td>
+                                    <td>14268</td>
+                                    <td>16480</td>
+                                </tr>
+                                <tr>
+                                    <th>181&ndash;200</th>
+                                    <td>10545</td>
+                                    <td>11331</td>
+                                    <td>13087</td>
+                                    <td>11947</td>
+                                    <td>12838</td>
+                                    <td>14827</td>
+                                    <td>14026</td>
+                                    <td>15071</td>
+                                    <td>17407</td>
+                                </tr>
+                                <tr>
+                                    <th>201&ndash;220</th>
+                                    <td>12073</td>
+                                    <td>12972</td>
+                                    <td>14983</td>
+                                    <td>13678</td>
+                                    <td>14697</td>
+                                    <td>16975</td>
+                                    <td>16058</td>
+                                    <td>17255</td>
+                                    <td>19929</td>
+                                </tr>
+                                <tr>
+                                    <th>221&ndash;240</th>
+                                    <td>12578</td>
+                                    <td>13515</td>
+                                    <td>15610</td>
+                                    <td>14251</td>
+                                    <td>15313</td>
+                                    <td>17687</td>
+                                    <td>16731</td>
+                                    <td>17978</td>
+                                    <td>20764</td>
+                                </tr>
+                                <tr>
+                                    <th>241&ndash;260</th>
+                                    <td>13278</td>
+                                    <td>14267</td>
+                                    <td>16479</td>
+                                    <td>15044</td>
+                                    <td>16165</td>
+                                    <td>18670</td>
+                                    <td>17662</td>
+                                    <td>18977</td>
+                                    <td>21919</td>
+                                </tr>
+                                <tr>
+                                    <th>261&ndash;280</th>
+                                    <td>13825</td>
+                                    <td>14855</td>
+                                    <td>17157</td>
+                                    <td>15663</td>
+                                    <td>16830</td>
+                                    <td>19439</td>
+                                    <td>18389</td>
+                                    <td>19759</td>
+                                    <td>22821</td>
+                                </tr>
+                                <tr>
+                                    <th>281&ndash;300</th>
+                                    <td>14370</td>
+                                    <td>15441</td>
+                                    <td>17834</td>
+                                    <td>16281</td>
+                                    <td>17494</td>
+                                    <td>20206</td>
+                                    <td>19114</td>
+                                    <td>20538</td>
+                                    <td>23722</td>
+                                </tr>
+                                <tr>
+                                    <th>301&ndash;320</th>
+                                    <td>14723</td>
+                                    <td>15820</td>
+                                    <td>18272</td>
+                                    <td>16682</td>
+                                    <td>17924</td>
+                                    <td>20703</td>
+                                    <td>19584</td>
+                                    <td>21043</td>
+                                    <td>24305</td>
+                                </tr>
+                                <tr>
+                                    <th>321&ndash;340</th>
+                                    <td>14887</td>
+                                    <td>15996</td>
+                                    <td>18475</td>
+                                    <td>16867</td>
+                                    <td>18123</td>
+                                    <td>20932</td>
+                                    <td>19801</td>
+                                    <td>21276</td>
+                                    <td>24574</td>
+                                </tr>
+                                <tr>
+                                    <th>341&ndash;360</th>
+                                    <td>15364</td>
+                                    <td>16509</td>
+                                    <td>19068</td>
+                                    <td>17408</td>
+                                    <td>18705</td>
+                                    <td>21604</td>
+                                    <td>20437</td>
+                                    <td>21959</td>
+                                    <td>25363</td>
+                                </tr>
+                                <tr>
+                                    <th>361&ndash;380</th>
+                                    <td>15536</td>
+                                    <td>16693</td>
+                                    <td>19281</td>
+                                    <td>17602</td>
+                                    <td>18913</td>
+                                    <td>21845</td>
+                                    <td>20665</td>
+                                    <td>22204</td>
+                                    <td>25646</td>
+                                </tr>
+                                <tr>
+                                    <th>381&ndash;400</th>
+                                    <td>15817</td>
+                                    <td>16995</td>
+                                    <td>19629</td>
+                                    <td>17920</td>
+                                    <td>19255</td>
+                                    <td>22240</td>
+                                    <td>21038</td>
+                                    <td>22606</td>
+                                    <td>26110</td>
+                                </tr>
+                            </tbody>
+                        </table> <br>
+                        <p>Uvedené ceny jsou bez DPH. Oprava hliníkových dílů s příplatkem 20 %.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <h2 class="hide">Opravy promáčklin</h2>
+                        <table style="width:500px;">
+                            <colgroup style="width:50px; border-right:2px solid #dddddd;"></colgroup>
+                            <colgroup style="width:50px;"></colgroup>
+                            <colgroup style="width:50px;"></colgroup>
+                            <colgroup style="width:50px;"></colgroup>
+                            <tbody>
+                                <tr>
+                                    <th rowspan="2">Oblast karoserie</th>
+                                    <th colspan="3">Průměr promáčkliny</th>
+                                </tr>
+                                <tr>
+                                    <th>do 20 mm</th>
+                                    <th>do 30 mm</th>
+                                    <th>do 45 mm</th>
+                                </tr>
+                                <tr>
+                                    <th class="lft">Blatník</th>
+                                    <td class="rgt">950</td>
+                                    <td class="rgt">1 300</td>
+                                    <td class="rgt">2 100</td>
+                                </tr>
+                                <tr>
+                                    <th class="lft">Přední dveře</th>
+                                    <td class="rgt">1 200</td>
+                                    <td class="rgt">1 750</td>
+                                    <td class="rgt">2 500</td>
+                                </tr>
+                                <tr>
+                                    <th class="lft">Zadní dveře</th>
+                                    <td class="rgt">1 200</td>
+                                    <td class="rgt">1 750</td>
+                                    <td class="rgt">2 500</td>
+                                </tr>
+                                <tr>
+                                    <th class="lft">Výjezdové dveře</th>
+                                    <td class="rgt">1 400</td>
+                                    <td class="rgt">1 800</td>
+                                    <td class="rgt">2 100</td>
+                                </tr>
+                                <tr>
+                                    <th class="lft">Zadní blok</th>
+                                    <td class="rgt">1 400</td>
+                                    <td class="rgt">1 800</td>
+                                    <td class="rgt">2 100</td>
+                                </tr>
+                                <tr>
+                                    <th class="lft">Krovní oblouk</th>
+                                    <td class="rgt">1 400</td>
+                                    <td class="rgt">1 800</td>
+                                    <td class="rgt">2 100</td>
+                                </tr>
+                                <tr>
+                                    <th class="lft">Kapota</th>
+                                    <td class="rgt">1 400</td>
+                                    <td class="rgt">1 800</td>
+                                    <td class="rgt">2 100</td>
+                                </tr>
+                                <tr>
+                                    <th class="lft">Střecha</th>
+                                    <td class="rgt">1 800</td>
+                                    <td class="rgt">2 300</td>
+                                    <td class="rgt">2 800</td>
+                                </tr>
+                                <tr>
+                                    <th class="lft">Kufrové dveře</th>
+                                    <td class="rgt">1 400</td>
+                                    <td class="rgt">1 800</td>
+                                    <td class="rgt">2 100</td>
+                                </tr>
+                            </tbody>
+                        </table> <br>
+                        <p>Uvedené ceny jsou bez DPH. Oprava hliníkových dílů s příplatkem 20 %.</p>
+                    </div>
+                </div>
+
+                <div class="in">
+
+
+                    <div class="prices" id="list1">
+
+                    </div>
+                    <div class="prices" id="list2" style="display: none;">
+
+                    </div>
+                    <!-- <a class="b-r" href="http://www.dajbych.cz/pdr-opravy-karoserii-bez-poskozeni-laku" style="position:absolute; top:765px; right:-322px;" rel="nofollow"><img src="images/dajbych.png" alt="Dajbych - nová pobočka" title="Otevřeli jsme pro vás novou pobočku - Dajbych, Praha" /></a>
+             <a class="b-r" href="soutez" style="position:absolute; top:36px; right:-322px;" rel="nofollow"><img src="images/soutez/banner1.png" alt="Soutěž" title="Zobrazit více o soutěži" /></a>-->
+
+
+                    <br class="clear">
+
+                    <hr>
+
+
+                    <div class="text action no-mobile">
+                        <h2>Rezervujte si termín opravy</h2>
+                        <p>Zaujaly vás naše služby? Chcete se na něco zeptat nebo si<br> domluvit termín prohlídky vozidla? Neváhejte nás kdykoli <a href="/kontakty">kontaktovat</a>.</p>
+                        <ul>
+                            <li><span class="free">800 01 01 02</span></li>
+                            <li><a href="mailto:info@vinicars.cz">info@vinicars.cz</a></li>
+                            <li><a href="/kontakty">Najít smluvního partnera</a></li>
+                            <!--Online kalkulace -->
+                        </ul>
+                    </div>
+
+                    <div class="text action mobile">
+                        <h2><a href="tel:800 01 01 02">Rezervujte si prohlídku vozu<br>Volejte zdarma: <span>800 01 01 02</span></a></h2>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <footer>
+        <div class="row wrapper">
+            <div class="col col-md-6">
+                <p class="links"><a href="/o-nas" rel="nofollow">O nás</a>
+                    <a href="/metoda-pdr" rel="nofollow" title="PDR - Paintless Dent Repair">Metoda PDR</a>
+                    <a href="/kontakty" rel="nofollow">Kontakty</a>
+                    <!--TODO zeptat se, zda je "tisknout" důležité-->
+                    <!--<a href="#" onclick="window.print(); return false;" rel="nofollow">Tisknout</a>--></p>
+                <!-- <a href="#" rel="nofollow">Přístupnost</a> -->
+                <p class="disclaimer">Na hlavní 18/53, 182 00 Praha 8, IČ: 24178764, DIČ: CZ24178764</p>
+                <p class="disclaimer">Zapsáno u rejstříkového soudu v Praze, oddíl C spis. značka 185995.</p>
+                <p class="disclaimer">© 2008 - 2022, VINICARS.cz</p>
+            </div>
+            <div class="col col-md-6">
+                <p class="social">
+                    <a href="http://www.facebook.com/pages/VINICARS/212118522133870" title="Najdete nás na facebooku" rel="nofollow" class="fb" target="_blank"></a>
+                    <a href="http://www.youtube.com/user/vinicarsTv" title="Podívejte se na naše videa" rel="nofollow" class="yt" target="_blank"></a>
+                    <!--TODO: google plus už není mezi námi-->
+                    <!--<a href="https://plus.google.com/106848675366945141320?rel=publisher" title="Sledovat nás můžete také na Google+" rel="nofollow" class="gp"></a>-->
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    </footer>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

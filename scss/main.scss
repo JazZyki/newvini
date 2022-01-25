@@ -17,27 +17,35 @@ body {
 }
 
 h1 {
-    font-size: 5vmin;
-    color: $baseColor;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
 }
+
 h2 {
-    font-size: 3vmin;
-    text-align: center;
-    color: grey;
-    font-weight: bold;
-    margin: 2rem auto;
-}
-h3 {
     font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: -.5px;
+}
+
 p {
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
 }
+
 .wrapper {
     width: 80vw;
     max-width: 1350px;
@@ -61,14 +69,55 @@ p {
     color: #ffffff;
 }
 
-.whiteCol {
-    color: #ffffff;
-}
-
 .greenCol {
     color: $baseColor;
 }
 
-@import 'header.scss';
-@import 'home.scss';
+.greyCol {
+    color: $grey2;
+}
+
+.underline {
+    border-bottom: 2px solid;
+}
+
+.text {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.yellowGradient {
+    background: rgb(255, 255, 86);
+    background: linear-gradient(0deg, rgba(255, 255, 86, 1) 0%, rgba(255, 255, 170, 1) 100%);
+}
+
+.noBackground {
+    background-color: rgba(255, 255, 255, 0)!important;
+}
+
+.center {
+    text-align: center;
+}
+
+.indent {
+    margin: 1rem 0;
+}
+
+p {
+    a {
+        font-size: 1.2rem;
+        color: $grey2;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        transition: .3s;
+        &:hover {
+            color: $grey2;
+            border-bottom: 1px solid $grey2;
+        }
+    }
+}
+
+@import 'header';
+@import 'footer';
+@import 'home';
 @import 'map';
+@import 'cenik'

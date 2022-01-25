@@ -1,0 +1,37 @@
+.cenik {
+    .mainContent {
+        margin-top: 2rem;
+        .tabSelect {
+            width: 100%;
+            background-color: $baseColor;
+            justify-content: center;
+            .nav-link {
+                border-radius: 0;
+                padding: 1rem;
+                font-size: 1.2rem;
+                color: #fff;
+                &.active {
+                    color: $baseColor;
+                    background-color: #fff;
+                }
+            }
+        }
+        .tab-content {
+            margin-top: 2rem;
+            table {
+                margin-top: -1.5rem;
+            }
+        }
+    }
+}
+
+.table-success {
+    --bs-table-bg: #fff;
+    --bs-table-striped-bg: #D8F5DD;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #bcd0c7;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #A6E8B1;
+    --bs-table-hover-color: #000;
+    color: #000;
+}
