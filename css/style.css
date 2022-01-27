@@ -572,8 +572,52 @@ footer .social .yt {
 .cenik .mainContent .tab-content {
   margin-top: 2rem;
 }
-.cenik .mainContent .tab-content table {
-  margin-top: -1.5rem;
+.cenik .mainContent .tab-content .autoOverflow {
+  overflow-x: auto;
+}
+.cenik .mainContent .tab-content table th,
+.cenik .mainContent .tab-content table td {
+  text-align: center;
+}
+.cenik .mainContent .tab-content table th,
+.cenik .mainContent .tab-content table td:first-child {
+  font-weight: bold;
+}
+.cenik .mainContent .tab-content table .headSecLine {
+  border-bottom: 2px solid #168E33;
+}
+.cenik .mainContent .tab-content table.opravyKroupy td:first-child,
+.cenik .mainContent .tab-content table.opravyKroupy td:nth-child(4),
+.cenik .mainContent .tab-content table.opravyKroupy td:nth-child(7) {
+  border-right: 1px solid #168E33;
+}
+.cenik .mainContent .tab-content table.opravyKroupy td:nth-child(2),
+.cenik .mainContent .tab-content table.opravyKroupy td:nth-child(3),
+.cenik .mainContent .tab-content table.opravyKroupy td:nth-child(5),
+.cenik .mainContent .tab-content table.opravyKroupy td:nth-child(6),
+.cenik .mainContent .tab-content table.opravyKroupy td:nth-child(8),
+.cenik .mainContent .tab-content table.opravyKroupy td:nth-child(9) {
+  border-right: 1px dotted #949494;
+}
+.cenik .mainContent .tab-content table.opravyPromackliny {
+  width: 50%;
+  margin: auto;
+}
+.cenik .mainContent .tab-content table.opravyPromackliny td:first-child,
+.cenik .mainContent .tab-content table.opravyPromackliny th:first-child {
+  text-align: right;
+  border-right: 2px solid #168E33;
+  padding-right: 2rem;
+}
+.cenik .mainContent .tab-content table.opravyPromackliny th:last-child {
+  border-bottom: none;
+}
+.cenik .mainContent .tab-content .promackliny h3 {
+  width: 50%;
+  margin: 0 auto;
+}
+.cenik .mainContent .tab-content .kroupy h3 {
+  margin: 0 auto;
 }
 
 .table-success {
@@ -585,6 +629,159 @@ footer .social .yt {
   --bs-table-hover-bg: #A6E8B1;
   --bs-table-hover-color: #000;
   color: #000;
+}
+
+.teamBlock {
+  margin-top: 2rem;
+}
+.teamBlock .image-flip {
+  height: 300px;
+  margin-bottom: 2rem;
+}
+.teamBlock .image-flip .mainflip {
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 300px;
+}
+.teamBlock .image-flip:hover .backside, .teamBlock .image-flip.hover .backside {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border-radius: 0.25rem;
+}
+.teamBlock .image-flip:hover .frontside, .teamBlock .image-flip.hover .frontside {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.teamBlock .image-flip .frontside {
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+  margin-bottom: 30px;
+  height: 300px;
+}
+.teamBlock .image-flip .frontside .card {
+  border-radius: 0;
+}
+.teamBlock .image-flip .frontside .card .card-body {
+  padding: 0;
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 30%;
+}
+.teamBlock .image-flip .frontside .card .card-body .card-title {
+  color: #fff;
+  position: absolute;
+  bottom: -8px;
+  background-color: #168E33;
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+}
+.teamBlock .image-flip .frontside .lidka {
+  background-image: url("../img/people/lidka.jpg");
+}
+.teamBlock .image-flip .frontside .buriankova {
+  background-image: url("../img/people/buriankova.jpg");
+}
+.teamBlock .image-flip .frontside .solomia {
+  background-image: url("../img/people/solomia.jpg");
+  background-position: 0 0%;
+}
+.teamBlock .image-flip .frontside .neutral {
+  background-image: url("../img/people/neutral.jpg");
+  background-position: 0 0%;
+}
+.teamBlock .image-flip .frontside .kurylo {
+  background-image: url("../img/people/kurylo.jpg");
+}
+.teamBlock .image-flip .frontside .korger {
+  background-image: url("../img/people/korger.jpg");
+  background-position: 0 0%;
+}
+.teamBlock .image-flip .frontside .pavel {
+  background-image: url("../img/people/pavel.jpg");
+  background-position: 0 0%;
+}
+.teamBlock .image-flip .frontside .roman {
+  background-image: url("../img/people/roman.jpg");
+  background-position: 0 0%;
+}
+.teamBlock .image-flip .frontside .tomas {
+  background-image: url("../img/people/tomashrna.jpg");
+  background-position: 0 0%;
+}
+.teamBlock .image-flip .frontside .globalExpert {
+  background-image: url("../img/people/global-expert.jpg");
+  background-position: 0 0%;
+}
+.teamBlock .image-flip .backside {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #168E33;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-box-shadow: 5px 7px 9px -4px #9e9e9e;
+  -moz-box-shadow: 5px 7px 9px -4px #9e9e9e;
+  box-shadow: 5px 7px 9px -4px #9e9e9e;
+}
+.teamBlock .image-flip .backside .card {
+  background-color: #168E33;
+  color: #fff;
+  height: 100%;
+  border-radius: 0;
+  border: none;
+}
+.teamBlock .image-flip .backside .card .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+}
+.teamBlock .image-flip .backside .card .card-body .card-title {
+  width: 100%;
+  font-size: 1.7rem;
+}
+.teamBlock .image-flip .backside .card .card-body .card-text {
+  width: 100%;
+}
+.teamBlock .image-flip .frontside,
+.teamBlock .image-flip .backside {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
 }
 
 /*# sourceMappingURL=style.css.map */

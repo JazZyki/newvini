@@ -18,8 +18,64 @@
         }
         .tab-content {
             margin-top: 2rem;
+            .autoOverflow {
+                overflow-x: auto;
+            }
             table {
-                margin-top: -1.5rem;
+                th,
+                td {
+                    text-align: center;
+                }
+                th,
+                td:first-child {
+                    font-weight: bold;
+                }
+                .headSecLine {
+                    border-bottom: 2px solid $baseColor;
+                }
+                &.opravyKroupy {
+                    td:first-child,
+                    td:nth-child(4),
+                    td:nth-child(7) {
+                        border-right: 1px solid $baseColor;
+                    }
+                    td:nth-child(2),
+                    td:nth-child(3),
+                    td:nth-child(5),
+                    td:nth-child(6),
+                    td:nth-child(8),
+                    td:nth-child(9) {
+                        border-right: 1px dotted $grey;
+                    }
+                }
+                &.opravyPromackliny {
+                    width: 50%;
+                    margin: auto;
+                    td,
+                    th {
+                        &:first-child {
+                            text-align: right;
+                            border-right: 2px solid $baseColor;
+                            padding-right: 2rem;
+                        }
+                    }
+                    th {
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+            .promackliny {
+                h3 {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
+            .kroupy {
+                h3 {
+                    margin: 0 auto;
+                }
             }
         }
     }

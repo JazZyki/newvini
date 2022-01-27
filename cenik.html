@@ -84,7 +84,7 @@
                                 <a class="nav-link" href="#">Společnost</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Kontakt</a>
+                                <a class="nav-link" href="kontakt.html">Kontakt</a>
                             </li>
                         </ul>
                     </div>
@@ -108,17 +108,17 @@
                     </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-pane fade show active kroupy" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <h3 class="greenCol center underline">Opravy po kroupách</h3>
-                        <table class="table table-striped table-hover table-success">
-                            <thead>
-                                <th colspan="1" rowspan="2">Počet důlků</th>
-                                <th colspan="3">Kapota, střecha</th>
-                                <th colspan="3">Blatník, dveře</th>
-                                <th colspan="3">Boční rám, kufr</th>
-                            </thead>
-                            <tbody>
-                                <tr class="head">
+                        <div class="autoOverflow">
+                            <table class="table table-striped table-hover table-success opravyKroupy">
+                                <thead>
+                                    <th colspan="1" rowspan="2">Počet důlků</th>
+                                    <th colspan="3">Kapota, střecha</th>
+                                    <th colspan="3">Blatník, dveře</th>
+                                    <th colspan="3">Boční rám, kufr</th>
+                                </thead>
+                                <thead class="headSecLine">
                                     <th></th>
                                     <th>20 mm</th>
                                     <th>30 mm</th>
@@ -129,462 +129,441 @@
                                     <th>20 mm</th>
                                     <th>30 mm</th>
                                     <th>40 mm</th>
-                                </tr>
-                                <tr>
-                                    <th>1</th>
-                                    <td>598</td>
-                                    <td>642</td>
-                                    <td>742</td>
-                                    <td>677</td>
-                                    <td>728</td>
-                                    <td>841</td>
-                                    <td>795</td>
-                                    <td>854</td>
-                                    <td>987</td>
-                                </tr>
-                                <tr>
-                                    <th>2&ndash;3</th>
-                                    <td>1076</td>
-                                    <td>1156</td>
-                                    <td>1336</td>
-                                    <td>1219</td>
-                                    <td>1310</td>
-                                    <td>1513</td>
-                                    <td>1431</td>
-                                    <td>1538</td>
-                                    <td>1776</td>
-                                </tr>
-                                <tr>
-                                    <th>4&ndash;6</th>
-                                    <td>1614</td>
-                                    <td>1734</td>
-                                    <td>2003</td>
-                                    <td>1829</td>
-                                    <td>1965</td>
-                                    <td>2270</td>
-                                    <td>2147</td>
-                                    <td>2307</td>
-                                    <td>2665</td>
-                                </tr>
-                                <tr>
-                                    <th>7&ndash;10</th>
-                                    <td>2373</td>
-                                    <td>2550</td>
-                                    <td>2945</td>
-                                    <td>2688</td>
-                                    <td>2889</td>
-                                    <td>3337</td>
-                                    <td>3156</td>
-                                    <td>3391</td>
-                                    <td>3917</td>
-                                </tr>
-                                <tr>
-                                    <th>11&ndash;15</th>
-                                    <td>2705</td>
-                                    <td>2907</td>
-                                    <td>3357</td>
-                                    <td>3065</td>
-                                    <td>3293</td>
-                                    <td>3804</td>
-                                    <td>3598</td>
-                                    <td>3866</td>
-                                    <td>4465</td>
-                                </tr>
-                                <tr>
-                                    <th>16&ndash;20</th>
-                                    <td>3057</td>
-                                    <td>3284</td>
-                                    <td>3794</td>
-                                    <td>3463</td>
-                                    <td>3721</td>
-                                    <td>4298</td>
-                                    <td>4066</td>
-                                    <td>4369</td>
-                                    <td>5046</td>
-                                </tr>
-                                <tr>
-                                    <th>21&ndash;25</th>
-                                    <td>3332</td>
-                                    <td>3580</td>
-                                    <td>4135</td>
-                                    <td>3775</td>
-                                    <td>4056</td>
-                                    <td>4685</td>
-                                    <td>4432</td>
-                                    <td>4762</td>
-                                    <td>5500</td>
-                                </tr>
-                                <tr>
-                                    <th>26&ndash;30</th>
-                                    <td>3632</td>
-                                    <td>3902</td>
-                                    <td>4507</td>
-                                    <td>4115</td>
-                                    <td>4421</td>
-                                    <td>5107</td>
-                                    <td>4831</td>
-                                    <td>5191</td>
-                                    <td>5995</td>
-                                </tr>
-                                <tr>
-                                    <th>31&ndash;40</th>
-                                    <td>4068</td>
-                                    <td>4371</td>
-                                    <td>5048</td>
-                                    <td>4609</td>
-                                    <td>4952</td>
-                                    <td>5719</td>
-                                    <td>5410</td>
-                                    <td>5813</td>
-                                    <td>6715</td>
-                                </tr>
-                                <tr>
-                                    <th>41&ndash;50</th>
-                                    <td>4556</td>
-                                    <td>4895</td>
-                                    <td>5654</td>
-                                    <td>5162</td>
-                                    <td>5546</td>
-                                    <td>6406</td>
-                                    <td>6060</td>
-                                    <td>6511</td>
-                                    <td>7520</td>
-                                </tr>
-                                <tr>
-                                    <th>51&ndash;60</th>
-                                    <td>5467</td>
-                                    <td>5874</td>
-                                    <td>6785</td>
-                                    <td>6194</td>
-                                    <td>6655</td>
-                                    <td>7687</td>
-                                    <td>7272</td>
-                                    <td>7813</td>
-                                    <td>9024</td>
-                                </tr>
-                                <tr>
-                                    <th>61&ndash;80</th>
-                                    <td>6560</td>
-                                    <td>7049</td>
-                                    <td>8141</td>
-                                    <td>7433</td>
-                                    <td>7986</td>
-                                    <td>9224</td>
-                                    <td>8726</td>
-                                    <td>9376</td>
-                                    <td>10829</td>
-                                </tr>
-                                <tr>
-                                    <th>81&ndash;100</th>
-                                    <td>7652</td>
-                                    <td>8222</td>
-                                    <td>9496</td>
-                                    <td>8669</td>
-                                    <td>9315</td>
-                                    <td>10759</td>
-                                    <td>10178</td>
-                                    <td>10936</td>
-                                    <td>12631</td>
-                                </tr>
-                                <tr>
-                                    <th>101&ndash;120</th>
-                                    <td>8358</td>
-                                    <td>8981</td>
-                                    <td>10373</td>
-                                    <td>9470</td>
-                                    <td>10176</td>
-                                    <td>11753</td>
-                                    <td>11118</td>
-                                    <td>11946</td>
-                                    <td>13798</td>
-                                </tr>
-                                <tr>
-                                    <th>121&ndash;140</th>
-                                    <td>8684</td>
-                                    <td>9331</td>
-                                    <td>10778</td>
-                                    <td>9839</td>
-                                    <td>10572</td>
-                                    <td>12211</td>
-                                    <td>11551</td>
-                                    <td>12412</td>
-                                    <td>14336</td>
-                                </tr>
-                                <tr>
-                                    <th>141&ndash;160</th>
-                                    <td>9639</td>
-                                    <td>10358</td>
-                                    <td>11963</td>
-                                    <td>10922</td>
-                                    <td>11735</td>
-                                    <td>13554</td>
-                                    <td>12822</td>
-                                    <td>13777</td>
-                                    <td>15913</td>
-                                </tr>
-                                <tr>
-                                    <th>161&ndash;180</th>
-                                    <td>9983</td>
-                                    <td>10727</td>
-                                    <td>12390</td>
-                                    <td>11311</td>
-                                    <td>12154</td>
-                                    <td>14037</td>
-                                    <td>13279</td>
-                                    <td>14268</td>
-                                    <td>16480</td>
-                                </tr>
-                                <tr>
-                                    <th>181&ndash;200</th>
-                                    <td>10545</td>
-                                    <td>11331</td>
-                                    <td>13087</td>
-                                    <td>11947</td>
-                                    <td>12838</td>
-                                    <td>14827</td>
-                                    <td>14026</td>
-                                    <td>15071</td>
-                                    <td>17407</td>
-                                </tr>
-                                <tr>
-                                    <th>201&ndash;220</th>
-                                    <td>12073</td>
-                                    <td>12972</td>
-                                    <td>14983</td>
-                                    <td>13678</td>
-                                    <td>14697</td>
-                                    <td>16975</td>
-                                    <td>16058</td>
-                                    <td>17255</td>
-                                    <td>19929</td>
-                                </tr>
-                                <tr>
-                                    <th>221&ndash;240</th>
-                                    <td>12578</td>
-                                    <td>13515</td>
-                                    <td>15610</td>
-                                    <td>14251</td>
-                                    <td>15313</td>
-                                    <td>17687</td>
-                                    <td>16731</td>
-                                    <td>17978</td>
-                                    <td>20764</td>
-                                </tr>
-                                <tr>
-                                    <th>241&ndash;260</th>
-                                    <td>13278</td>
-                                    <td>14267</td>
-                                    <td>16479</td>
-                                    <td>15044</td>
-                                    <td>16165</td>
-                                    <td>18670</td>
-                                    <td>17662</td>
-                                    <td>18977</td>
-                                    <td>21919</td>
-                                </tr>
-                                <tr>
-                                    <th>261&ndash;280</th>
-                                    <td>13825</td>
-                                    <td>14855</td>
-                                    <td>17157</td>
-                                    <td>15663</td>
-                                    <td>16830</td>
-                                    <td>19439</td>
-                                    <td>18389</td>
-                                    <td>19759</td>
-                                    <td>22821</td>
-                                </tr>
-                                <tr>
-                                    <th>281&ndash;300</th>
-                                    <td>14370</td>
-                                    <td>15441</td>
-                                    <td>17834</td>
-                                    <td>16281</td>
-                                    <td>17494</td>
-                                    <td>20206</td>
-                                    <td>19114</td>
-                                    <td>20538</td>
-                                    <td>23722</td>
-                                </tr>
-                                <tr>
-                                    <th>301&ndash;320</th>
-                                    <td>14723</td>
-                                    <td>15820</td>
-                                    <td>18272</td>
-                                    <td>16682</td>
-                                    <td>17924</td>
-                                    <td>20703</td>
-                                    <td>19584</td>
-                                    <td>21043</td>
-                                    <td>24305</td>
-                                </tr>
-                                <tr>
-                                    <th>321&ndash;340</th>
-                                    <td>14887</td>
-                                    <td>15996</td>
-                                    <td>18475</td>
-                                    <td>16867</td>
-                                    <td>18123</td>
-                                    <td>20932</td>
-                                    <td>19801</td>
-                                    <td>21276</td>
-                                    <td>24574</td>
-                                </tr>
-                                <tr>
-                                    <th>341&ndash;360</th>
-                                    <td>15364</td>
-                                    <td>16509</td>
-                                    <td>19068</td>
-                                    <td>17408</td>
-                                    <td>18705</td>
-                                    <td>21604</td>
-                                    <td>20437</td>
-                                    <td>21959</td>
-                                    <td>25363</td>
-                                </tr>
-                                <tr>
-                                    <th>361&ndash;380</th>
-                                    <td>15536</td>
-                                    <td>16693</td>
-                                    <td>19281</td>
-                                    <td>17602</td>
-                                    <td>18913</td>
-                                    <td>21845</td>
-                                    <td>20665</td>
-                                    <td>22204</td>
-                                    <td>25646</td>
-                                </tr>
-                                <tr>
-                                    <th>381&ndash;400</th>
-                                    <td>15817</td>
-                                    <td>16995</td>
-                                    <td>19629</td>
-                                    <td>17920</td>
-                                    <td>19255</td>
-                                    <td>22240</td>
-                                    <td>21038</td>
-                                    <td>22606</td>
-                                    <td>26110</td>
-                                </tr>
-                            </tbody>
-                        </table> <br>
-                        <p>Uvedené ceny jsou bez DPH. Oprava hliníkových dílů s příplatkem 20 %.</p>
+                                </thead>
+                                <tbody class="aboutLines">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>598</td>
+                                        <td>642</td>
+                                        <td>742</td>
+                                        <td>677</td>
+                                        <td>728</td>
+                                        <td>841</td>
+                                        <td>795</td>
+                                        <td>854</td>
+                                        <td>987</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2&ndash;3</td>
+                                        <td>1076</td>
+                                        <td>1156</td>
+                                        <td>1336</td>
+                                        <td>1219</td>
+                                        <td>1310</td>
+                                        <td>1513</td>
+                                        <td>1431</td>
+                                        <td>1538</td>
+                                        <td>1776</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4&ndash;6</td>
+                                        <td>1614</td>
+                                        <td>1734</td>
+                                        <td>2003</td>
+                                        <td>1829</td>
+                                        <td>1965</td>
+                                        <td>2270</td>
+                                        <td>2147</td>
+                                        <td>2307</td>
+                                        <td>2665</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7&ndash;10</td>
+                                        <td>2373</td>
+                                        <td>2550</td>
+                                        <td>2945</td>
+                                        <td>2688</td>
+                                        <td>2889</td>
+                                        <td>3337</td>
+                                        <td>3156</td>
+                                        <td>3391</td>
+                                        <td>3917</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11&ndash;15</td>
+                                        <td>2705</td>
+                                        <td>2907</td>
+                                        <td>3357</td>
+                                        <td>3065</td>
+                                        <td>3293</td>
+                                        <td>3804</td>
+                                        <td>3598</td>
+                                        <td>3866</td>
+                                        <td>4465</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16&ndash;20</td>
+                                        <td>3057</td>
+                                        <td>3284</td>
+                                        <td>3794</td>
+                                        <td>3463</td>
+                                        <td>3721</td>
+                                        <td>4298</td>
+                                        <td>4066</td>
+                                        <td>4369</td>
+                                        <td>5046</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21&ndash;25</td>
+                                        <td>3332</td>
+                                        <td>3580</td>
+                                        <td>4135</td>
+                                        <td>3775</td>
+                                        <td>4056</td>
+                                        <td>4685</td>
+                                        <td>4432</td>
+                                        <td>4762</td>
+                                        <td>5500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26&ndash;30</td>
+                                        <td>3632</td>
+                                        <td>3902</td>
+                                        <td>4507</td>
+                                        <td>4115</td>
+                                        <td>4421</td>
+                                        <td>5107</td>
+                                        <td>4831</td>
+                                        <td>5191</td>
+                                        <td>5995</td>
+                                    </tr>
+                                    <tr>
+                                        <td>31&ndash;40</td>
+                                        <td>4068</td>
+                                        <td>4371</td>
+                                        <td>5048</td>
+                                        <td>4609</td>
+                                        <td>4952</td>
+                                        <td>5719</td>
+                                        <td>5410</td>
+                                        <td>5813</td>
+                                        <td>6715</td>
+                                    </tr>
+                                    <tr>
+                                        <td>41&ndash;50</td>
+                                        <td>4556</td>
+                                        <td>4895</td>
+                                        <td>5654</td>
+                                        <td>5162</td>
+                                        <td>5546</td>
+                                        <td>6406</td>
+                                        <td>6060</td>
+                                        <td>6511</td>
+                                        <td>7520</td>
+                                    </tr>
+                                    <tr>
+                                        <td>51&ndash;60</td>
+                                        <td>5467</td>
+                                        <td>5874</td>
+                                        <td>6785</td>
+                                        <td>6194</td>
+                                        <td>6655</td>
+                                        <td>7687</td>
+                                        <td>7272</td>
+                                        <td>7813</td>
+                                        <td>9024</td>
+                                    </tr>
+                                    <tr>
+                                        <td>61&ndash;80</td>
+                                        <td>6560</td>
+                                        <td>7049</td>
+                                        <td>8141</td>
+                                        <td>7433</td>
+                                        <td>7986</td>
+                                        <td>9224</td>
+                                        <td>8726</td>
+                                        <td>9376</td>
+                                        <td>10829</td>
+                                    </tr>
+                                    <tr>
+                                        <td>81&ndash;100</td>
+                                        <td>7652</td>
+                                        <td>8222</td>
+                                        <td>9496</td>
+                                        <td>8669</td>
+                                        <td>9315</td>
+                                        <td>10759</td>
+                                        <td>10178</td>
+                                        <td>10936</td>
+                                        <td>12631</td>
+                                    </tr>
+                                    <tr>
+                                        <td>101&ndash;120</td>
+                                        <td>8358</td>
+                                        <td>8981</td>
+                                        <td>10373</td>
+                                        <td>9470</td>
+                                        <td>10176</td>
+                                        <td>11753</td>
+                                        <td>11118</td>
+                                        <td>11946</td>
+                                        <td>13798</td>
+                                    </tr>
+                                    <tr>
+                                        <td>121&ndash;140</td>
+                                        <td>8684</td>
+                                        <td>9331</td>
+                                        <td>10778</td>
+                                        <td>9839</td>
+                                        <td>10572</td>
+                                        <td>12211</td>
+                                        <td>11551</td>
+                                        <td>12412</td>
+                                        <td>14336</td>
+                                    </tr>
+                                    <tr>
+                                        <td>141&ndash;160</td>
+                                        <td>9639</td>
+                                        <td>10358</td>
+                                        <td>11963</td>
+                                        <td>10922</td>
+                                        <td>11735</td>
+                                        <td>13554</td>
+                                        <td>12822</td>
+                                        <td>13777</td>
+                                        <td>15913</td>
+                                    </tr>
+                                    <tr>
+                                        <td>161&ndash;180</td>
+                                        <td>9983</td>
+                                        <td>10727</td>
+                                        <td>12390</td>
+                                        <td>11311</td>
+                                        <td>12154</td>
+                                        <td>14037</td>
+                                        <td>13279</td>
+                                        <td>14268</td>
+                                        <td>16480</td>
+                                    </tr>
+                                    <tr>
+                                        <td>181&ndash;200</td>
+                                        <td>10545</td>
+                                        <td>11331</td>
+                                        <td>13087</td>
+                                        <td>11947</td>
+                                        <td>12838</td>
+                                        <td>14827</td>
+                                        <td>14026</td>
+                                        <td>15071</td>
+                                        <td>17407</td>
+                                    </tr>
+                                    <tr>
+                                        <td>201&ndash;220</td>
+                                        <td>12073</td>
+                                        <td>12972</td>
+                                        <td>14983</td>
+                                        <td>13678</td>
+                                        <td>14697</td>
+                                        <td>16975</td>
+                                        <td>16058</td>
+                                        <td>17255</td>
+                                        <td>19929</td>
+                                    </tr>
+                                    <tr>
+                                        <td>221&ndash;240</td>
+                                        <td>12578</td>
+                                        <td>13515</td>
+                                        <td>15610</td>
+                                        <td>14251</td>
+                                        <td>15313</td>
+                                        <td>17687</td>
+                                        <td>16731</td>
+                                        <td>17978</td>
+                                        <td>20764</td>
+                                    </tr>
+                                    <tr>
+                                        <td>241&ndash;260</td>
+                                        <td>13278</td>
+                                        <td>14267</td>
+                                        <td>16479</td>
+                                        <td>15044</td>
+                                        <td>16165</td>
+                                        <td>18670</td>
+                                        <td>17662</td>
+                                        <td>18977</td>
+                                        <td>21919</td>
+                                    </tr>
+                                    <tr>
+                                        <td>261&ndash;280</td>
+                                        <td>13825</td>
+                                        <td>14855</td>
+                                        <td>17157</td>
+                                        <td>15663</td>
+                                        <td>16830</td>
+                                        <td>19439</td>
+                                        <td>18389</td>
+                                        <td>19759</td>
+                                        <td>22821</td>
+                                    </tr>
+                                    <tr>
+                                        <td>281&ndash;300</td>
+                                        <td>14370</td>
+                                        <td>15441</td>
+                                        <td>17834</td>
+                                        <td>16281</td>
+                                        <td>17494</td>
+                                        <td>20206</td>
+                                        <td>19114</td>
+                                        <td>20538</td>
+                                        <td>23722</td>
+                                    </tr>
+                                    <tr>
+                                        <td>301&ndash;320</td>
+                                        <td>14723</td>
+                                        <td>15820</td>
+                                        <td>18272</td>
+                                        <td>16682</td>
+                                        <td>17924</td>
+                                        <td>20703</td>
+                                        <td>19584</td>
+                                        <td>21043</td>
+                                        <td>24305</td>
+                                    </tr>
+                                    <tr>
+                                        <td>321&ndash;340</td>
+                                        <td>14887</td>
+                                        <td>15996</td>
+                                        <td>18475</td>
+                                        <td>16867</td>
+                                        <td>18123</td>
+                                        <td>20932</td>
+                                        <td>19801</td>
+                                        <td>21276</td>
+                                        <td>24574</td>
+                                    </tr>
+                                    <tr>
+                                        <td>341&ndash;360</td>
+                                        <td>15364</td>
+                                        <td>16509</td>
+                                        <td>19068</td>
+                                        <td>17408</td>
+                                        <td>18705</td>
+                                        <td>21604</td>
+                                        <td>20437</td>
+                                        <td>21959</td>
+                                        <td>25363</td>
+                                    </tr>
+                                    <tr>
+                                        <td>361&ndash;380</td>
+                                        <td>15536</td>
+                                        <td>16693</td>
+                                        <td>19281</td>
+                                        <td>17602</td>
+                                        <td>18913</td>
+                                        <td>21845</td>
+                                        <td>20665</td>
+                                        <td>22204</td>
+                                        <td>25646</td>
+                                    </tr>
+                                    <tr>
+                                        <td>381&ndash;400</td>
+                                        <td>15817</td>
+                                        <td>16995</td>
+                                        <td>19629</td>
+                                        <td>17920</td>
+                                        <td>19255</td>
+                                        <td>22240</td>
+                                        <td>21038</td>
+                                        <td>22606</td>
+                                        <td>26110</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="center indent">Uvedené ceny jsou bez DPH. Oprava hliníkových dílů s příplatkem 20 %.</p>
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <h2 class="hide">Opravy promáčklin</h2>
-                        <table style="width:500px;">
-                            <colgroup style="width:50px; border-right:2px solid #dddddd;"></colgroup>
-                            <colgroup style="width:50px;"></colgroup>
-                            <colgroup style="width:50px;"></colgroup>
-                            <colgroup style="width:50px;"></colgroup>
-                            <tbody>
-                                <tr>
+                    <div class="tab-pane fade promackliny" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <h3 class="greenCol center underline">Opravy promáčklin</h3>
+                        <div class="autoOverflow">
+                            <table class="table table-striped table-hover table-success opravyPromackliny">
+                                <thead>
                                     <th rowspan="2">Oblast karoserie</th>
                                     <th colspan="3">Průměr promáčkliny</th>
-                                </tr>
-                                <tr>
+                                </thead>
+                                <thead class="headSecLine">
+                                    <th></th>
                                     <th>do 20 mm</th>
                                     <th>do 30 mm</th>
                                     <th>do 45 mm</th>
-                                </tr>
-                                <tr>
-                                    <th class="lft">Blatník</th>
-                                    <td class="rgt">950</td>
-                                    <td class="rgt">1 300</td>
-                                    <td class="rgt">2 100</td>
-                                </tr>
-                                <tr>
-                                    <th class="lft">Přední dveře</th>
-                                    <td class="rgt">1 200</td>
-                                    <td class="rgt">1 750</td>
-                                    <td class="rgt">2 500</td>
-                                </tr>
-                                <tr>
-                                    <th class="lft">Zadní dveře</th>
-                                    <td class="rgt">1 200</td>
-                                    <td class="rgt">1 750</td>
-                                    <td class="rgt">2 500</td>
-                                </tr>
-                                <tr>
-                                    <th class="lft">Výjezdové dveře</th>
-                                    <td class="rgt">1 400</td>
-                                    <td class="rgt">1 800</td>
-                                    <td class="rgt">2 100</td>
-                                </tr>
-                                <tr>
-                                    <th class="lft">Zadní blok</th>
-                                    <td class="rgt">1 400</td>
-                                    <td class="rgt">1 800</td>
-                                    <td class="rgt">2 100</td>
-                                </tr>
-                                <tr>
-                                    <th class="lft">Krovní oblouk</th>
-                                    <td class="rgt">1 400</td>
-                                    <td class="rgt">1 800</td>
-                                    <td class="rgt">2 100</td>
-                                </tr>
-                                <tr>
-                                    <th class="lft">Kapota</th>
-                                    <td class="rgt">1 400</td>
-                                    <td class="rgt">1 800</td>
-                                    <td class="rgt">2 100</td>
-                                </tr>
-                                <tr>
-                                    <th class="lft">Střecha</th>
-                                    <td class="rgt">1 800</td>
-                                    <td class="rgt">2 300</td>
-                                    <td class="rgt">2 800</td>
-                                </tr>
-                                <tr>
-                                    <th class="lft">Kufrové dveře</th>
-                                    <td class="rgt">1 400</td>
-                                    <td class="rgt">1 800</td>
-                                    <td class="rgt">2 100</td>
-                                </tr>
-                            </tbody>
-                        </table> <br>
-                        <p>Uvedené ceny jsou bez DPH. Oprava hliníkových dílů s příplatkem 20 %.</p>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Blatník</td>
+                                        <td>950</td>
+                                        <td>1 300</td>
+                                        <td>2 100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Přední dveře</td>
+                                        <td>1 200</td>
+                                        <td>1 750</td>
+                                        <td>2 500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zadní dveře</td>
+                                        <td>1 200</td>
+                                        <td>1 750</td>
+                                        <td>2 500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Výjezdové dveře</td>
+                                        <td>1 400</td>
+                                        <td>1 800</td>
+                                        <td>2 100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zadní blok</td>
+                                        <td>1 400</td>
+                                        <td>1 800</td>
+                                        <td>2 100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Krovní oblouk</td>
+                                        <td>1 400</td>
+                                        <td>1 800</td>
+                                        <td>2 100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kapota</td>
+                                        <td>1 400</td>
+                                        <td>1 800</td>
+                                        <td>2 100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Střecha</td>
+                                        <td>1 800</td>
+                                        <td>2 300</td>
+                                        <td>2 800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kufrové dveře</td>
+                                        <td>1 400</td>
+                                        <td>1 800</td>
+                                        <td>2 100</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="center indent">Uvedené ceny jsou bez DPH. Oprava hliníkových dílů s příplatkem 20 %.</p>
                     </div>
                 </div>
 
-                <div class="in">
-
-
-                    <div class="prices" id="list1">
-
+                <div class="text yellowGradient row">
+                    <div class="col col-9">
+                        <h3 class="greyCol">Rezervujte si termín opravy</h3>
+                        <p>Zaujaly vás naše služby? Chcete se na něco zeptat nebo si domluvit termín prohlídky vozidla? Neváhejte nás kdykoli <a href="/kontakty">kontaktovat</a>.</p>
                     </div>
-                    <div class="prices" id="list2" style="display: none;">
-
+                    <div class="col col-3">
+                        <p class="center">800 01 01 02</p>
+                        <p class="center"><a href="mailto:info@vinicars.cz">info@vinicars.cz</a></p>
+                        <p class="center"><a href="/kontakty" class="center">Najít smluvního partnera</a></p>
                     </div>
-                    <!-- <a class="b-r" href="http://www.dajbych.cz/pdr-opravy-karoserii-bez-poskozeni-laku" style="position:absolute; top:765px; right:-322px;" rel="nofollow"><img src="images/dajbych.png" alt="Dajbych - nová pobočka" title="Otevřeli jsme pro vás novou pobočku - Dajbych, Praha" /></a>
-             <a class="b-r" href="soutez" style="position:absolute; top:36px; right:-322px;" rel="nofollow"><img src="images/soutez/banner1.png" alt="Soutěž" title="Zobrazit více o soutěži" /></a>-->
-
-
-                    <br class="clear">
-
-                    <hr>
-
-
-                    <div class="text action no-mobile">
-                        <h2>Rezervujte si termín opravy</h2>
-                        <p>Zaujaly vás naše služby? Chcete se na něco zeptat nebo si<br> domluvit termín prohlídky vozidla? Neváhejte nás kdykoli <a href="/kontakty">kontaktovat</a>.</p>
-                        <ul>
-                            <li><span class="free">800 01 01 02</span></li>
-                            <li><a href="mailto:info@vinicars.cz">info@vinicars.cz</a></li>
-                            <li><a href="/kontakty">Najít smluvního partnera</a></li>
-                            <!--Online kalkulace -->
-                        </ul>
-                    </div>
-
-                    <div class="text action mobile">
-                        <h2><a href="tel:800 01 01 02">Rezervujte si prohlídku vozu<br>Volejte zdarma: <span>800 01 01 02</span></a></h2>
-                    </div>
-
-
+                    </ul>
                 </div>
             </div>
+    </div>
 
-        </main>
+    </main>
     </div>
     <footer>
         <div class="row wrapper">
