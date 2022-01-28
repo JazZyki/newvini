@@ -2,6 +2,7 @@
 //###   Basic Variables   ###
 // COLORS
 $baseColor: #168E33;
+$baseColor_opacity: #168E3333;
 $redColor: red;
 $blueColor: #0093FF;
 $darkBlueColor: #0068B5;
@@ -114,6 +115,11 @@ p {
             border-bottom: 1px solid $grey2;
         }
     }
+}
+
+.width100 {
+    width: 100%;
+    margin: auto;
 }
 
 @import 'header';

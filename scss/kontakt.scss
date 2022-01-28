@@ -58,44 +58,44 @@
                         padding: 1rem;
                         text-align: left;
                     }
+                    &.lidka {
+                        background-image: url('../img/people/lidka.jpg');
+                    }
+                    &.buriankova {
+                        background-image: url('../img/people/buriankova.jpg');
+                    }
+                    &.solomia {
+                        background-image: url('../img/people/solomia.jpg');
+                        background-position: 0 20%;
+                    }
+                    &.neutral {
+                        background-image: url('../img/people/neutral.jpg');
+                        background-position: 0 0%;
+                    }
+                    &.kurylo {
+                        background-image: url('../img/people/kurylo.jpg');
+                    }
+                    &.korger {
+                        background-image: url('../img/people/korger.jpg');
+                        background-position: 0 0%;
+                    }
+                    &.pavel {
+                        background-image: url('../img/people/pavel.jpg');
+                        background-position: 0 0%;
+                    }
+                    &.roman {
+                        background-image: url('../img/people/roman.jpg');
+                        background-position: 0 0%;
+                    }
+                    &.tomas {
+                        background-image: url('../img/people/tomashrna.jpg');
+                        background-position: 0 0%;
+                    }
+                    &.globalExpert {
+                        background-image: url('../img/people/global-expert.jpg');
+                        background-position: 0 0%;
+                    }
                 }
-            }
-            .lidka {
-                background-image: url('../img/people/lidka.jpg');
-            }
-            .buriankova {
-                background-image: url('../img/people/buriankova.jpg');
-            }
-            .solomia {
-                background-image: url('../img/people/solomia.jpg');
-                background-position: 0 0%;
-            }
-            .neutral {
-                background-image: url('../img/people/neutral.jpg');
-                background-position: 0 0%;
-            }
-            .kurylo {
-                background-image: url('../img/people/kurylo.jpg');
-            }
-            .korger {
-                background-image: url('../img/people/korger.jpg');
-                background-position: 0 0%;
-            }
-            .pavel {
-                background-image: url('../img/people/pavel.jpg');
-                background-position: 0 0%;
-            }
-            .roman {
-                background-image: url('../img/people/roman.jpg');
-                background-position: 0 0%;
-            }
-            .tomas {
-                background-image: url('../img/people/tomashrna.jpg');
-                background-position: 0 0%;
-            }
-            .globalExpert {
-                background-image: url('../img/people/global-expert.jpg');
-                background-position: 0 0%;
             }
         }
         .backside {
@@ -130,6 +130,21 @@
                     }
                     .card-text {
                         width: 100%;
+                        &.phone {
+                            padding-bottom: .5rem;
+                            border-bottom: 1px dotted;
+                            &::before {
+                                content: '';
+                                display: inline-block;
+                                width: 30px;
+                                height: 30px;
+                                background-image: url('../img/phoneIco.svg');
+                                background-size: cover;
+                                position: relative;
+                                top: 9px;
+                                margin-right: 1rem;
+                            }
+                        }
                     }
                 }
             }
@@ -151,5 +166,46 @@
             transition: 1s;
             transform-style: preserve-3d;
         }
+    }
+}
+
+.logoKontakt {
+    width: 50%;
+    max-width: 320px;
+}
+
+.sidloKontakt {
+    width: 100%;
+    height: auto;
+}
+
+.otvirackaKontakt {
+    font-size: 1.6rem;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+    margin-bottom: -6px;
+    transition: .3s;
+    &:hover {
+        background-color: $grey2;
+    }
+    &.tvIco {
+        background-image: url('../img/tvIco.svg');
+    }
+    &.wifiIco {
+        background-image: url('../img/wifiIco.svg');
+    }
+    &.cardIco {
+        background-image: url('../img/cardIco.svg');
+    }
+    &.cofeeIco {
+        background-image: url('../img/cofeeIco.svg');
     }
 }

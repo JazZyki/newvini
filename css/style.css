@@ -103,6 +103,11 @@ p a:hover {
   border-bottom: 1px solid #555;
 }
 
+.width100 {
+  width: 100%;
+  margin: auto;
+}
+
 #header {
   width: 100%;
   padding: 1rem 0 0;
@@ -281,12 +286,15 @@ footer {
 }
 footer .links {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 footer .links::before {
   content: "";
   background-image: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   display: inline-block;
   width: 150px;
   height: 30px;
@@ -294,6 +302,22 @@ footer .links::before {
   margin-right: 1rem;
   filter: grayscale(1);
   transition: 0.3s;
+}
+footer .links a {
+  padding: 0 1rem;
+  border: none;
+  border-right: 1px solid;
+}
+footer .links a:last-child {
+  border: none;
+}
+footer .links a:last-child:hover {
+  border: none;
+}
+footer .links a:hover {
+  border: none;
+  border-right: 1px solid;
+  background-color: #168E3333;
 }
 footer .disclaimer {
   color: #949494;
@@ -693,40 +717,40 @@ footer .social .yt {
   padding: 1rem;
   text-align: left;
 }
-.teamBlock .image-flip .frontside .lidka {
+.teamBlock .image-flip .frontside .card .card-body.lidka {
   background-image: url("../img/people/lidka.jpg");
 }
-.teamBlock .image-flip .frontside .buriankova {
+.teamBlock .image-flip .frontside .card .card-body.buriankova {
   background-image: url("../img/people/buriankova.jpg");
 }
-.teamBlock .image-flip .frontside .solomia {
+.teamBlock .image-flip .frontside .card .card-body.solomia {
   background-image: url("../img/people/solomia.jpg");
-  background-position: 0 0%;
+  background-position: 0 20%;
 }
-.teamBlock .image-flip .frontside .neutral {
+.teamBlock .image-flip .frontside .card .card-body.neutral {
   background-image: url("../img/people/neutral.jpg");
   background-position: 0 0%;
 }
-.teamBlock .image-flip .frontside .kurylo {
+.teamBlock .image-flip .frontside .card .card-body.kurylo {
   background-image: url("../img/people/kurylo.jpg");
 }
-.teamBlock .image-flip .frontside .korger {
+.teamBlock .image-flip .frontside .card .card-body.korger {
   background-image: url("../img/people/korger.jpg");
   background-position: 0 0%;
 }
-.teamBlock .image-flip .frontside .pavel {
+.teamBlock .image-flip .frontside .card .card-body.pavel {
   background-image: url("../img/people/pavel.jpg");
   background-position: 0 0%;
 }
-.teamBlock .image-flip .frontside .roman {
+.teamBlock .image-flip .frontside .card .card-body.roman {
   background-image: url("../img/people/roman.jpg");
   background-position: 0 0%;
 }
-.teamBlock .image-flip .frontside .tomas {
+.teamBlock .image-flip .frontside .card .card-body.tomas {
   background-image: url("../img/people/tomashrna.jpg");
   background-position: 0 0%;
 }
-.teamBlock .image-flip .frontside .globalExpert {
+.teamBlock .image-flip .frontside .card .card-body.globalExpert {
   background-image: url("../img/people/global-expert.jpg");
   background-position: 0 0%;
 }
@@ -766,6 +790,21 @@ footer .social .yt {
 .teamBlock .image-flip .backside .card .card-body .card-text {
   width: 100%;
 }
+.teamBlock .image-flip .backside .card .card-body .card-text.phone {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dotted;
+}
+.teamBlock .image-flip .backside .card .card-body .card-text.phone::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/phoneIco.svg");
+  background-size: cover;
+  position: relative;
+  top: 9px;
+  margin-right: 1rem;
+}
 .teamBlock .image-flip .frontside,
 .teamBlock .image-flip .backside {
   -webkit-backface-visibility: hidden;
@@ -782,6 +821,47 @@ footer .social .yt {
   -ms-transform-style: preserve-3d;
   transition: 1s;
   transform-style: preserve-3d;
+}
+
+.logoKontakt {
+  width: 50%;
+  max-width: 320px;
+}
+
+.sidloKontakt {
+  width: 100%;
+  height: auto;
+}
+
+.otvirackaKontakt {
+  font-size: 1.6rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+  margin-bottom: -6px;
+  transition: 0.3s;
+}
+.icon:hover {
+  background-color: #555;
+}
+.icon.tvIco {
+  background-image: url("../img/tvIco.svg");
+}
+.icon.wifiIco {
+  background-image: url("../img/wifiIco.svg");
+}
+.icon.cardIco {
+  background-image: url("../img/cardIco.svg");
+}
+.icon.cofeeIco {
+  background-image: url("../img/cofeeIco.svg");
 }
 
 /*# sourceMappingURL=style.css.map */
