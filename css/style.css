@@ -864,4 +864,51 @@ footer .social .yt {
   background-image: url("../img/cofeeIco.svg");
 }
 
+.recenze {
+  margin-top: 2rem;
+}
+.recenze .nazor {
+  display: inline-block;
+  margin-left: 2rem;
+  color: #555;
+}
+.recenze .row {
+  margin-top: 2rem;
+}
+.recenze .row .recenzeCard .card {
+  background: none;
+  border: none;
+}
+.recenze .row .recenzeCard .card .card-body {
+  padding: 0;
+}
+.recenze .row .recenzeCard .card .card-body .card-text {
+  background-color: #fff;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.recenze .row .recenzeCard .card .card-body .card-text::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  position: absolute;
+  bottom: -1rem;
+  left: 10%;
+  transform: rotate(45deg);
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+  border-right: 1.5rem solid white;
+}
+.recenze .row .recenzeCard .card .card-body .card-title {
+  color: #555;
+  text-align: right;
+  width: 100%;
+  margin: 0 0 0 auto;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style.css.map */
