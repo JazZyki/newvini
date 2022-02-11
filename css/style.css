@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 body {
   font-family: "Roboto", sans-serif;
@@ -352,29 +353,36 @@ footer .social .yt {
   margin-left: 1rem;
 }
 
-.mainContent .homeCarousel {
-  margin-bottom: 2rem;
+.carousel-item {
+  display: flex;
+  display: none;
 }
-.mainContent .homeCarousel .carousel-item {
+
+.homeCarousel {
+  width: 80vw;
+  max-width: 1350px;
+  margin: 1rem auto 2rem;
+}
+.homeCarousel .carousel-item {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.mainContent .homeCarousel .carousel-item.active {
+.homeCarousel .carousel-item.active {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.mainContent .homeCarousel .carousel-item .w-33 {
+.homeCarousel .carousel-item .w-33 {
   width: 32.5%;
   display: inline-block !important;
 }
-.mainContent .homeCarousel .carousel-item .carousel-caption {
+.homeCarousel .carousel-item .carousel-caption {
   display: none !important;
 }
-.mainContent .homeCarousel .carousel-indicators {
+.homeCarousel .carousel-indicators {
   bottom: -40px;
 }
-.mainContent .homeCarousel .carousel-control-next {
+.homeCarousel .carousel-control-next {
   background-color: #fff;
   width: 50px;
   height: 50px;
@@ -382,7 +390,7 @@ footer .social .yt {
   right: 25px;
   border-radius: 100%;
 }
-.mainContent .homeCarousel .carousel-control-prev {
+.homeCarousel .carousel-control-prev {
   background-color: #fff;
   width: 50px;
   height: 50px;
@@ -390,6 +398,103 @@ footer .social .yt {
   left: 25px;
   border-radius: 100%;
 }
+
+.fotoCarousel {
+  margin: 1rem auto 2rem;
+}
+.fotoCarousel .carousel-item {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.fotoCarousel .carousel-item.active {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.fotoCarousel .carousel-item .w-33 {
+  width: 32.5%;
+  display: inline-block !important;
+}
+.fotoCarousel .carousel-item .w-33:last-child {
+  display: flex !important;
+  align-items: center;
+  background-color: green;
+  padding: 2rem;
+}
+.fotoCarousel .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+.fotoCarousel .carousel-item .before::after {
+  content: "před opravou";
+  display: inline-block;
+  width: 100%;
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.fotoCarousel .carousel-item .after::after {
+  content: "po opravě";
+  display: inline-block;
+  width: 100%;
+  background-color: #168E33;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.fotoCarousel .carousel-item .popis {
+  font-size: 2rem;
+  color: #fff;
+}
+.fotoCarousel .carousel-item .popis .title {
+  font-weight: bold;
+  display: block;
+}
+.fotoCarousel .carousel-item .popis .title a {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+.fotoCarousel .carousel-item .popis .title a:hover {
+  border-bottom: 2px solid #fff;
+}
+.fotoCarousel .carousel-indicators {
+  bottom: -40px;
+}
+.fotoCarousel .carousel-indicators .active {
+  opacity: 1;
+  background-color: #168E33 !important;
+}
+.fotoCarousel .carousel-control-next {
+  background-color: #555;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 25px);
+  right: -35px;
+  border-radius: 100%;
+}
+.fotoCarousel .carousel-control-next .carousel-control-next-icon {
+  filter: none;
+}
+.fotoCarousel .carousel-control-prev {
+  background-color: #555;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 25px);
+  left: -35px;
+  border-radius: 100%;
+}
+.fotoCarousel .carousel-control-prev .carousel-control-prev-icon {
+  filter: none;
+}
+
 .mainContent .likvidaceOdstavce {
   color: #fff;
   font-size: 1.2rem;
@@ -909,6 +1014,118 @@ footer .social .yt {
   margin: 0 0 0 auto;
   font-size: 0.8rem;
   display: inline-block;
+}
+
+.oSpolecnosti .headerPicture {
+  background-image: url("../img/vinicars3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20vw;
+  position: relative;
+}
+.oSpolecnosti .headerPicture .headerTxt {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  bottom: 20px;
+}
+.oSpolecnosti .headerPicture .headerTxt h1 {
+  text-align: left;
+}
+.oSpolecnosti .pocty {
+  margin: 2rem 0;
+  text-align: center;
+}
+.oSpolecnosti .pocty div {
+  border-right: 1px solid #949494;
+}
+.oSpolecnosti .pocty div:last-of-type {
+  border: none;
+}
+.oSpolecnosti .pocty div .numero {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.oSpolecnosti .pocty div .nase {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.oSpolecnosti .pocty div .nase::before {
+  width: 30%;
+  padding: 15%;
+  display: block;
+  content: "";
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.oSpolecnosti .pocty div .mise::before {
+  background-image: url("../img/world.png");
+}
+.oSpolecnosti .pocty div .vize::before {
+  background-image: url("../img/flag.png");
+}
+.oSpolecnosti .pocty div .produkt::before {
+  background-image: url("../img/plane.png");
+}
+.oSpolecnosti .pocty div .klienti::before {
+  background-image: url("../img/man.png");
+}
+
+.partneri {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 1rem;
+}
+.partneri div {
+  width: 22%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.partneri div .partner {
+  width: 100%;
+  padding: 50%;
+  background-size: contain;
+  border-radius: 100%;
+  display: inherit;
+  transition: 0.3s;
+}
+.partneri div .partner.first {
+  background-image: url("../img/partners/6.png");
+}
+.partneri div .partner.second {
+  background-image: url("../img/partners/10.png");
+}
+.partneri div .partner.third {
+  background-image: url("../img/partners/12.png");
+}
+.partneri div .partner.fourth {
+  background-image: url("../img/partners/11.png");
+}
+.partneri div .partner.fifth {
+  background-image: url("../img/partners/14.png");
+}
+.partneri div .partner.sixth {
+  background-image: url("../img/partners/1.png");
+}
+.partneri div .partner.seventh {
+  background-image: url("../img/partners/13.png");
+}
+.partneri div .partner.eighth {
+  background-image: url("../img/partners/4.png");
+}
+.partneri div .partner.nineth {
+  background-image: url("../img/partners/2.png");
+}
+.partneri div .partner.tenth {
+  background-image: url("../img/partners/7.png");
+}
+.partneri div .partner:hover {
+  transform: scale(1.15);
 }
 
 /*# sourceMappingURL=style.css.map */
