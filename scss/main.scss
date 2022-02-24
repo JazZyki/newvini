@@ -17,6 +17,11 @@ body {
     background-color: #f5f5f5;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -122,6 +127,18 @@ p {
     margin: auto;
 }
 
+.noLeftPadding {
+    padding-left: 0;
+}
+
+.stretch {
+    align-items: stretch;
+    .col {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 @import 'header';
 @import 'footer';
 @import 'carousels';
@@ -130,4 +147,5 @@ p {
 @import 'cenik';
 @import 'kontakt';
 @import 'recenze';
-@import 'onas'
+@import 'onas';
+@import 'other';

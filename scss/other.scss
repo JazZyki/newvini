@@ -1,0 +1,68 @@
+.opravaKaroserie {
+    .mainContent {
+        .uvod {
+            align-items: stretch;
+        }
+        .videoContainer {
+            padding-bottom: 32.25%;
+        }
+        .procNam {
+            &.indent {
+                margin: 0;
+                height: 100%;
+            }
+        }
+        .buttonGroup {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            margin: 1rem;
+        }
+        .blueParagraph {
+            color: #fff;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            background-color: $blueColor;
+            padding: 2rem;
+            &.indent {
+                margin: 1rem 12px 1rem 0;
+            }
+            p {
+                margin-bottom: 0;
+                text-align: center;
+                &:first-child {
+                    margin-bottom: 2rem;
+                }
+                strong {
+                    font-size: 2rem;
+                    padding-left: 1rem;
+                }
+            }
+        }
+        .vedeliJste {
+            background-color: rgba(0, 0, 0, 0);
+            .historyFoto {
+                float: right;
+                shape-outside: polygon(33.77% 0px, 100% 0px, 99.72% 105.45%, -46.57% 105.92%);
+            }
+        }
+        .odhalteTajemstvi {
+            background: $baseColor url(../img/uncover.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            p {
+                width: 70%;
+                color: #fff;
+            }
+            a {
+                color: #fff;
+                border-bottom: 2px solid rgba(0, 0, 0, 0);
+                transition: .3s;
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                }
+            }
+        }
+    }
+}

@@ -6,6 +6,11 @@ body {
   background-color: #f5f5f5;
 }
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -107,6 +112,18 @@ p a:hover {
 .width100 {
   width: 100%;
   margin: auto;
+}
+
+.noLeftPadding {
+  padding-left: 0;
+}
+
+.stretch {
+  align-items: stretch;
+}
+.stretch .col {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #header {
@@ -1126,6 +1143,69 @@ footer .social .yt {
 }
 .partneri div .partner:hover {
   transform: scale(1.15);
+}
+
+.opravaKaroserie .mainContent .uvod {
+  align-items: stretch;
+}
+.opravaKaroserie .mainContent .videoContainer {
+  padding-bottom: 32.25%;
+}
+.opravaKaroserie .mainContent .procNam.indent {
+  margin: 0;
+  height: 100%;
+}
+.opravaKaroserie .mainContent .buttonGroup {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 1rem;
+}
+.opravaKaroserie .mainContent .blueParagraph {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  background-color: #0093FF;
+  padding: 2rem;
+}
+.opravaKaroserie .mainContent .blueParagraph.indent {
+  margin: 1rem 12px 1rem 0;
+}
+.opravaKaroserie .mainContent .blueParagraph p {
+  margin-bottom: 0;
+  text-align: center;
+}
+.opravaKaroserie .mainContent .blueParagraph p:first-child {
+  margin-bottom: 2rem;
+}
+.opravaKaroserie .mainContent .blueParagraph p strong {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+.opravaKaroserie .mainContent .vedeliJste {
+  background-color: rgba(0, 0, 0, 0);
+}
+.opravaKaroserie .mainContent .vedeliJste .historyFoto {
+  float: right;
+  shape-outside: polygon(33.77% 0px, 100% 0px, 99.72% 105.45%, -46.57% 105.92%);
+}
+.opravaKaroserie .mainContent .odhalteTajemstvi {
+  background: #168E33 url(../img/uncover.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.opravaKaroserie .mainContent .odhalteTajemstvi p {
+  width: 70%;
+  color: #fff;
+}
+.opravaKaroserie .mainContent .odhalteTajemstvi a {
+  color: #fff;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.3s;
+}
+.opravaKaroserie .mainContent .odhalteTajemstvi a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
