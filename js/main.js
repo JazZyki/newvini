@@ -64,3 +64,13 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+// Buttons hrefs
+
+document.getElementById("toContact").onclick = function() {
+    location.href = "kontakty.html";
+};
+
+document.getElementById("toPricelist").onclick = function() {
+    location.href = "cenik.html";
+};
