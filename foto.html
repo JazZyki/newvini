@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--TODO: meta keywords, atd.-->
-    <meta name="description" content="oprava karoserie, metoda pdr, vinicars">
+    <meta name="description" content="Podívejte se jak rychlá a šetrná může být oprava karoserie - metodou PDR! Fotografie a videoukázky oprav - Vinicars">
+    <meta name="keywords" content="fotografie, oprava karosérie, vinicars">
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="author" content="Jakub Zykl">
     <link rel="icon" href="img/favicon.ico">
 
-    <title>Opravy po krupobití po celé ČR - VINICARS</title>
-    <!--TODO: canonicla links-->
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    <title>Fotogalerie a ukázky oprav PDR - VINICARS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -22,6 +22,27 @@
 
     <!-- Import jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-25042364-1', 'auto', {
+            'siteSpeedSampleRate': 90
+        });
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body class="homePage">
@@ -30,7 +51,7 @@
             $("#header").load("header.html");
         </script>
     </header>
-    <div class="mainContent">
+    <div id="content" class="mainContent">
         <main role="main">
             <div class="wrapper">
                 <div class="row gx-5">
@@ -58,10 +79,10 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/photo7.jpg" alt="...">
+                                    <img src="img/fotogalerie/photo7.jpg" alt="Oprava karoserie - před">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/photo8.jpg" alt="...">
+                                    <img src="img/fotogalerie/photo8.jpg" alt="Oprava karoserie pdr">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title"><a href="/foto/subaru-legacy" title="Klikněte pro více fotografií z opravy důlků">Oprava důlků na dveřích</a></span> <span class="desc">Subaru Legacy</span></p>
@@ -69,10 +90,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/2.png" alt="...">
+                                    <img src="img/fotogalerie/2.png" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/3.png" alt="...">
+                                    <img src="img/fotogalerie/3.png" alt="Oprava karoserie - po" title="Oprava karoserie - paintless dent repair">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčkliny na zadních dveřích</span> <span class="desc">Fiat Punto</span></p>
@@ -80,10 +101,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="50000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/20.png" alt="...">
+                                    <img src="img/fotogalerie/20.png" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/21.png" alt="...">
+                                    <img src="img/fotogalerie/21.png" alt="Oprava karoserie - po" title="Oprava karoserie - paintless dent repair">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčkliny</span> <span class="desc">Volkswagen Passat</span></p>
@@ -91,10 +112,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/22.png" alt="...">
+                                    <img src="img/fotogalerie/22.png" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/23.png" alt="...">
+                                    <img src="img/fotogalerie/23.png" alt="Oprava karoserie - po" title="Oprava karoserie - paintless dent repair">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčkliny</span> <span class="desc">Volkswagen Multivan</span></p>
@@ -102,10 +123,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/4.png" alt="...">
+                                    <img src="img/fotogalerie/4.png" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/5.png" alt="...">
+                                    <img src="img/fotogalerie/5.png" alt="Oprava karoserie - po" title="Oprava metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčklého blatníku</span> <span class="desc">Volkswagen Touareg</span></p>
@@ -113,10 +134,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/15.jpg" alt="...">
+                                    <img src="img/fotogalerie/15.jpg" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/16.jpg" alt="...">
+                                    <img src="img/fotogalerie/16.jpg" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčklého blatníku</span> <span class="desc">Porsche Panamera</span></p>
@@ -124,10 +145,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/vw2.jpg" alt="...">
+                                    <img src="img/fotogalerie/vw2.jpg" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/vw.jpg" alt="...">
+                                    <img src="img/fotogalerie/vw.jpg" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava zadních dveří</span> <span class="desc">Volkswagen</span></p>
@@ -135,10 +156,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/17.png" alt="...">
+                                    <img src="img/fotogalerie/17.png" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/18.png" alt="...">
+                                    <img src="img/fotogalerie/18.png" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava zadního blatníku</span> <span class="desc">Volkswagen EOS</span></p>
@@ -146,10 +167,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/prius.jpg" alt="...">
+                                    <img src="img/fotogalerie/prius.jpg" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/priusx.jpg" alt="...">
+                                    <img src="img/fotogalerie/priusx.jpg" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčklých dveří</span> <span class="desc">Toyota Prius</span></p>
@@ -157,10 +178,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/porschex.jpg" alt="...">
+                                    <img src="img/fotogalerie/porschex.jpg" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/porsche.jpg" alt="...">
+                                    <img src="img/fotogalerie/porsche.jpg" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčklého blatníku</span> <span class="desc">Porsche</span></p>
@@ -168,10 +189,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/vwpassat.jpg" alt="...">
+                                    <img src="img/fotogalerie/vwpassat.jpg" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/vwpassat2.jpg" alt="...">
+                                    <img src="img/fotogalerie/vwpassat2.jpg" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava zadních dveří</span> <span class="desc">Volkswagen Passat</span></p>
@@ -179,10 +200,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/13.jpg" alt="...">
+                                    <img src="img/fotogalerie/13.jpg" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/14.jpg" alt="...">
+                                    <img src="img/fotogalerie/14.jpg" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava důlků ve dveřích</span> <span class="desc">Porsche 911</span></p>
@@ -190,10 +211,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/11.jpg" alt="...">
+                                    <img src="img/fotogalerie/11.jpg" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/12.jpg" alt="...">
+                                    <img src="img/fotogalerie/12.jpg" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčklého pravého blatníku</span> <span class="desc">Renault Fluence</span></p>
@@ -201,10 +222,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/photo3.jpg" alt="...">
+                                    <img src="img/fotogalerie/photo3.jpg" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/photo4.jpg" alt="...">
+                                    <img src="img/fotogalerie/photo4.jpg" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčklého blatníku</span> <span class="desc">Mercedes Benz</span></p>
@@ -212,10 +233,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/photo5.jpg" alt="...">
+                                    <img src="img/fotogalerie/photo5.jpg" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/photo6.jpg" alt="...">
+                                    <img src="img/fotogalerie/photo6.jpg" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčklé kapoty</span> <span class="desc">Škoda Octavia</span></p>
@@ -223,10 +244,10 @@
                             </div>
                             <div class="carousel-item " data-bs-interval="5000">
                                 <div class="d-block w-33 before">
-                                    <img src="img/fotogalerie/photo1.jpg" alt="...">
+                                    <img src="img/fotogalerie/photo1.jpg" alt="Oprava karoserie - před" title="Před opravou karoserie">
                                 </div>
                                 <div class="d-block w-33 after">
-                                    <img src="img/fotogalerie/photo2.jpg" alt="...">
+                                    <img src="img/fotogalerie/photo2.jpg" alt="Oprava karoserie - po" title="Oprava karoserie metodou PDR">
                                 </div>
                                 <div class="d-block w-33">
                                     <p class="popis"><span class="title">Oprava promáčklého boku</span> <span class="desc">Opel Astra</span></p>
@@ -257,9 +278,7 @@
         </script>
     </footer>
     <!-- /.container -->
-
-    <!-- Bootstrap core JavaScript
-================================================== -->
+    <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>
@@ -267,6 +286,14 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
+    <!-- Seznam retargeting -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var seznam_retargeting_id = 37259;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//c.imedia.cz/js/retargeting.js"></script>
 
 </body>
 

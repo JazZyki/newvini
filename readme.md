@@ -5,18 +5,14 @@ skript pro kompilaci scss:
 sass --watch scss/main.scss:css/style.css 
 
 ## TODO:
-    - zbývající stránky: form pro recenze, oprava Subarka
-    - porovnat jména VŠECH souborů - SEO
-    - meta tagy
-    - google analytics
-    - celková kontrola v rámci analytics a retargetingu (v patičce origoš webu jsou skripty) --> porovnat orig vs new
-    - alt(y) apod.
-    - responzivita - hlavně sloupce
+    - zbývající stránky: form pro recenze - *hodnoceni.php*, oprava Subarka, expresni-lakovani
+    - responzivita - hlavně sloupce - mění se menu - přibude sekce "pobočky"!!!!
     - formulář na přidávání recenzí !!!
-    - zkontrolovat prolinky !!!
+    - zkontrolovat prolinky - akorát chybí na subaru PDR, na hodnocení a na expresni_lakovani (oprava-karoserie.html)
     - proklik na opravu SUbarka
-    - kontrola všeho - i nazvy souborů - kvůli SEO - případně se zeptat Hrni, kde co a jak... + přístupy
+    - zeptat se Hrni, kde co a jak... + přístupy pokud poskytne na GA
     - optimalizace youtube videí
+    - odkaz na hlavní content - ověřit že funguje
 
 ## Změny
     - na home a ve fotogalerii přidán carousel 

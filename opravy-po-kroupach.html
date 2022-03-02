@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--TODO: meta keywords, atd.-->
-    <meta name="description" content="oprava karoserie, metoda pdr, vinicars">
+    <meta name="description" content="Poškodilo váš vůz krupobití? Opravíme vám ho metodu PDR bez lakování. Jedná se o nejefektivnější způsob opravy po kroupách v naprosto rekordním čase.">
+    <meta name="keywords" content="vinicars, oprava karoserie po krupobití, oprava po kroupách, opravy karoserií po kroupách, vyrovnání důlků">
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="author" content="Jakub Zykl">
     <link rel="icon" href="img/favicon.ico">
 
-    <title>Opravy po krupobití po celé ČR - VINICARS</title>
-    <!--TODO: canonicla links-->
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    <title>Oprava karoserie po kroupách a krupobití, PDR - VINICARS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -22,6 +22,27 @@
 
     <!-- Import jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-25042364-1', 'auto', {
+            'siteSpeedSampleRate': 90
+        });
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body class="opravaKroupy">
@@ -30,7 +51,7 @@
             $("#header").load("header.html");
         </script>
     </header>
-    <div class="mainContent">
+    <div id="content" class="mainContent">
         <main role="main">
             <div class="wrapper">
                 <h1 class="blueCol">Oprava po kroupách a krupobití (PDR)</h1>
@@ -49,7 +70,7 @@
                                 <li>Partneři po celé ČR (40x)</li>
                             </ul>
                             <div class="buttonGroup">
-                                <button class="btn btn-info btn-lg" type="button" title="Fotografie oprav karoserií" onclick="window.location.href='fotogalerie.html';">Ukázky oprav</button>
+                                <button class="btn btn-info btn-lg" type="button" title="Fotografie oprav karoserií" onclick="window.location.href='foto.html';">Ukázky oprav</button>
                                 <button class="btn btn-success btn-lg" type="button" title="Oprava karoserie ceny" onclick="window.location.href='cenik.html#pills-profile';">On-line&nbsp;kalkulace</button>
                             </div>
                         </div>
@@ -66,11 +87,11 @@
                     <div class="col col-lg-6 noLeftPadding">
                         <div class="text opravaKaroserie indent">
                             <h2 class="blueCol underline">Krupobití, kroupy, důlky…</h2>
-                            <p style="font-weight:bold;">Již přes 10 let se specializujeme na <strong>opravy aut po kroupách</strong> <a href="oprava-karoserie">metodou PDR</a>. Opravili jsme již tisíce vozů po krupobití v celé ČR i Evropě.</p>
+                            <p style="font-weight:bold;">Již přes 10 let se specializujeme na <strong>opravy aut po kroupách</strong> <a href="oprava-karoserie.html">metodou PDR</a>. Opravili jsme již tisíce vozů po krupobití v celé ČR i Evropě.</p>
                             <p>Rukami nám prošly již tisíce aut, tuzemských i zahraničních klientů, poničených kroupami. Dokážeme spolehlivě opravit všechny plechové díly karoserie, od jediného důlku až po stovky důlků. Pevně věříme, že právě u nás budete
                                 v dobrých rukou. Neváhejte a kontaktujte nás pro bezplatnou prohlídku vozu na našeho <a href="kontakty.html">nejbližšího partnera</a> VINICARS.</p> <br>
                             <h3 class="greyCol">Oprava karoserie bez lakování</h3>
-                            <p>Oprava karosérie po kroupách a krupobití <strong>metodou PDR</strong> určitě předčí vaše očekávání. <a href="metoda-pdr" title="Opravy PDR">Oprava PDR</a> je maximálně šetrná k vozu. Jedná se o mechanickou opravu bez poškození
+                            <p>Oprava karosérie po kroupách a krupobití <strong>metodou PDR</strong> určitě předčí vaše očekávání. <a href="metoda-pdr.html" title="Opravy PDR">Oprava PDR</a> je maximálně šetrná k vozu. Jedná se o mechanickou opravu bez poškození
                                 laku a bez nutnosti lakování. Nespornou výhodou je, že vůz opravou neztrácí na hodnotě.</p>
                             <p>V případě nových vozů v tovární záruce nedochází opravou PDR ke ztrátě záruky. Jedná se o velmi kvalitní, rychlou a nízkonákladovou opravu karoserie po krupobití bez nutnosti lakování. Metodu PDR lze použít na všechny značky
                                 vozů.
@@ -87,34 +108,35 @@
                     <div class="col col-lg-6 kroupyPartneri">
                         <div class="indent noBackground">
                             <h2 class="blueCol underline">Vyřízení pojistné události</h2>
-                            <p>Rádi vám pomůžeme také s <strong><a href="vyrizeni-pojistne-udalosti">vyřízením pojistné události</a></strong> ve spolupráci s vaší pojišťovnou. Naši specialisté na likvidaci pojistných událostí jsou vám vždy k dispozici. <br><strong>Služba je zcela ZDARMA ✓</strong></p>
+                            <p>Rádi vám pomůžeme také s <strong><a href="vyrizeni-pojistne-udalosti.html">vyřízením pojistné události</a></strong> ve spolupráci s vaší pojišťovnou. Naši specialisté na likvidaci pojistných událostí jsou vám vždy k dispozici.
+                                <br><strong>Služba je zcela ZDARMA ✓</strong></p>
                             <div class="partneri">
                                 <div>
-                                    <a href="http://www.vinicars.cz/vyrizeni-pojistne-udalosti" class="partner cp" rel="nofollow" target="_blank"></a>
+                                    <a href="vyrizeni-pojistne-udalosti.html" class="partner cp" rel="nofollow" target="_blank"></a>
                                 </div>
                                 <div>
-                                    <a href="http://www.vinicars.cz/vyrizeni-pojistne-udalosti" class="partner triglav" rel="nofollow" target="_blank"></a>
+                                    <a href="vyrizeni-pojistne-udalosti.html" class="partner triglav" rel="nofollow" target="_blank"></a>
                                 </div>
                                 <div>
-                                    <a href="http://www.vinicars.cz/vyrizeni-pojistne-udalosti" class="partner axa" rel="nofollow" target="_blank"></a>
+                                    <a href="vyrizeni-pojistne-udalosti.html" class="partner axa" rel="nofollow" target="_blank"></a>
                                 </div>
                                 <div>
-                                    <a href="http://www.vinicars.cz/vyrizeni-pojistne-udalosti" class="partner uniqa" rel="nofollow" target="_blank"></a>
+                                    <a href="vyrizeni-pojistne-udalosti.html" class="partner uniqa" rel="nofollow" target="_blank"></a>
                                 </div>
                                 <div>
-                                    <a href="http://www.vinicars.cz/vyrizeni-pojistne-udalosti" class="partner koop" rel="nofollow" target="_blank"></a>
+                                    <a href="vyrizeni-pojistne-udalosti.html" class="partner koop" rel="nofollow" target="_blank"></a>
                                 </div>
                                 <div>
-                                    <a href="http://www.vinicars.cz/vyrizeni-pojistne-udalosti" class="partner cpp" rel="nofollow" target="_blank"></a>
+                                    <a href="vyrizeni-pojistne-udalosti.html" class="partner cpp" rel="nofollow" target="_blank"></a>
                                 </div>
                                 <div>
-                                    <a href="http://www.vinicars.cz/vyrizeni-pojistne-udalosti" class="partner allianz" rel="nofollow" target="_blank"></a>
+                                    <a href="vyrizeni-pojistne-udalosti.html" class="partner allianz" rel="nofollow" target="_blank"></a>
                                 </div>
                                 <div>
-                                    <a href="http://www.vinicars.cz/vyrizeni-pojistne-udalosti" class="partner generali" rel="nofollow" target="_blank"></a>
+                                    <a href="vyrizeni-pojistne-udalosti.html" class="partner generali" rel="nofollow" target="_blank"></a>
                                 </div>
                                 <div>
-                                    <a href="http://www.vinicars.cz/vyrizeni-pojistne-udalosti" class="partner csob" rel="nofollow" target="_blank"></a>
+                                    <a href="vyrizeni-pojistne-udalosti.html" class="partner csob" rel="nofollow" target="_blank"></a>
                                 </div>
                             </div>
                         </div>
@@ -124,8 +146,7 @@
                                 <a href="kontakty.html" rel="nofollow" style="top:85px; left:135px;" title="Praha"><span>Praha</span></a> <a href="kontakty.html" rel="nofollow" style="top:190px; left:130px;" title="České Budějovice"><span>České Budějovice</span></a>
                                 <a href="kontakty.html" rel="nofollow" style="top:200px; left:120px;" title="Český Krumlov"><span>Český Krumlov</span></a> <a href="kontakty.html" rel="nofollow" style="top:175px; left:100px;" title="Strakonice"><span>Strakonice</span></a>                                <a href="kontakty.html" rel="nofollow" style="top:65px; left:140px;" title="Mělník"><span>Mělník</span></a> <a href="kontakty.html" rel="nofollow" style="top:125px; left:115px;" title="Příbram"><span>Příbram</span></a>                                <a href="kontakty.html" rel="nofollow" style="top:80px; left:205px;" title="Pardubice"><span>Pardubice</span></a> <a href="kontakty.html" rel="nofollow" style="top:165px; left:250px;" title="Brno"><span>Brno</span></a>                                <a href="kontakty.html" rel="nofollow" style="top:140px; left:195px;" title="Jihlava"><span>Jihlava</span></a> <a href="kontakty.html" rel="nofollow" style="top:30px; left:105px;" title="Ústí nad Labem"><span>Ústí nad Labem</span></a>                                <a href="kontakty.html" rel="nofollow" style="top:120px; left:65px;" title="Plzeň"><span>Plzeň</span></a> <a href="kontakty.html" rel="nofollow" style="top:25px; left:160px;" title="Liberec"><span>Liberec</span></a>
                                 <a href="kontakty.html" rel="nofollow" style="top:70px; left:215px;" title="Hradec Králové"><span>Hradec Králové</span></a> <a href="kontakty.html" rel="nofollow" style="top:170px; left:165px;" title="Jindřichův Hradec"><span>Jindřichův Hradec</span></a>                                <a href="kontakty.html" rel="nofollow" style="top:130px; left:280px;" title="Olomouc"><span>Olomouc</span></a> <a href="kontakty.html" rel="nofollow" style="top:165px; left:305px;" title="Zlín"><span>Zlín</span></a>
-                                <a
-                                    href="kontakty.html" rel="nofollow" style="top:110px; left:355px;" title="Ostrava"><span>Ostrava</span></a> <a href="kontakty.html" rel="nofollow" style="top:75px; left:25px;" title="Karlovy Vary"><span>Karlovy Vary</span></a>
+                                <a href="kontakty.html" rel="nofollow" style="top:110px; left:355px;" title="Ostrava"><span>Ostrava</span></a> <a href="kontakty.html" rel="nofollow" style="top:75px; left:25px;" title="Karlovy Vary"><span>Karlovy Vary</span></a>
                             </div>
                         </div>
                     </div>
@@ -144,9 +165,7 @@
         </script>
     </footer>
     <!-- /.container -->
-
-    <!-- Bootstrap core JavaScript
-================================================== -->
+    <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>
@@ -154,6 +173,14 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
+    <!-- Seznam retargeting -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var seznam_retargeting_id = 37259;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//c.imedia.cz/js/retargeting.js"></script>
 
 </body>
 

@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--TODO: meta keywords, atd.-->
-    <meta name="description" content="oprava karoserie, metoda pdr, vinicars">
+    <meta name="description" content="Opravy po krupobití provádíme moderní metodou PDR, bez nutnosti lakování. Vůz opravou neztrácí na hodnotě - Vinicars">
+    <meta name="keywords" content="oprava karoserie, metoda pdr, vinicars">
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="author" content="Jakub Zykl">
     <link rel="icon" href="img/favicon.ico">
 
     <title>Opravy po krupobití po celé ČR - VINICARS</title>
-    <!--TODO: canonicla links-->
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -22,6 +22,27 @@
 
     <!-- Import jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-25042364-1', 'auto', {
+            'siteSpeedSampleRate': 90
+        });
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body class="homePage">
@@ -30,7 +51,7 @@
             $("#header").load("header.html");
         </script>
     </header>
-    <div class="mainContent">
+    <div id="content" class="mainContent">
         <main role="main">
             <div class="fullWidth">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide homeCarousel" data-bs-ride="carousel">
@@ -41,27 +62,27 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="100000">
-                            <img src="img/porovnani/1.jpg" class="d-block w-33" alt="...">
-                            <img src="img/porovnani/2.jpg" class="d-block w-33" alt="...">
-                            <img src="img/porovnani/3.jpg" class="d-block w-33" alt="...">
+                            <img src="img/porovnani/1.jpg" class="d-block w-33" alt="Srovnání opravy před a po PDR" title="Před a po opravě metodou PDR">
+                            <img src="img/porovnani/2.jpg" class="d-block w-33" alt="Srovnání opravy před a po PDR" title="Před a po opravě metodou PDR">
+                            <img src="img/porovnani/3.jpg" class="d-block w-33" alt="Srovnání opravy před a po PDR" title="Před a po opravě metodou PDR">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
                                 <p>Some representative placeholder content for the first slide.</p>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="img/porovnani/4.jpg" class="d-block w-33" alt="...">
-                            <img src="img/porovnani/5.jpg" class="d-block w-33" alt="...">
-                            <img src="img/porovnani/6.jpg" class="d-block w-33" alt="...">
+                            <img src="img/porovnani/4.jpg" class="d-block w-33" alt="Srovnání opravy před a po PDR" title="Před a po opravě metodou PDR">
+                            <img src="img/porovnani/5.jpg" class="d-block w-33" alt="Srovnání opravy před a po PDR" title="Před a po opravě metodou PDR">
+                            <img src="img/porovnani/6.jpg" class="d-block w-33" alt="Srovnání opravy před a po PDR" title="Před a po opravě metodou PDR">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
                                 <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/porovnani/7.jpg" class="d-block w-33" alt="...">
-                            <img src="img/porovnani/8.jpg" class="d-block w-33" alt="...">
-                            <img src="img/porovnani/9.jpg" class="d-block w-33" alt="...">
+                            <img src="img/porovnani/7.jpg" class="d-block w-33" alt="Srovnání opravy před a po PDR" title="Před a po opravě metodou PDR">
+                            <img src="img/porovnani/8.jpg" class="d-block w-33" alt="Srovnání opravy před a po PDR" title="Před a po opravě metodou PDR">
+                            <img src="img/porovnani/9.jpg" class="d-block w-33" alt="Srovnání opravy před a po PDR" title="Před a po opravě metodou PDR">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>
                                 <p>Some representative placeholder content for the third slide.</p>
@@ -78,12 +99,26 @@
                 </button>
                 </div>
                 <h1 class="mainHead greenCol">Opravy po krupobití po celé ČR</h1>
-                <h2 class="leadHead greyCol">Máte promáčkliny nebo důlky v karoserii? Vrátíme vás v čase!<br>Opravíme vaši karoserii bez lakování, rychle a šetrně <a href="#">metodou PDR</a>.</h2>
+                <h2 class="leadHead greyCol">Máte promáčkliny nebo důlky v karoserii? Vrátíme vás v čase!<br>Opravíme vaši karoserii bez lakování, rychle a šetrně <a href="metoda-pdr.html">metodou PDR</a>.</h2>
             </div>
             <div class="wrapper">
                 <div class="row gx-5">
                     <div class="col col-12 col-sm-8">
-                        <div class="likvidaceOdstavce">
+                        <div class="ukHelp">
+                            <h2>Help for Ukraina</h2>
+                            <div class="row">
+                                <div class="col col-md-4">
+                                    <img class="bigFlag" src="img/flags/ua.svg">
+                                </div>
+                                <div class="col col-md-8">
+                                    <p>Potřebuji pomoc | Потрібна допомога.</p>
+                                    <p>Nabízím pomoc | Пропоную допомогу.</p>
+                                    <p>Tel.: <strong>+420 777 662 010</strong></p>
+                                    <p>E-mail: <strong>help.vinicars@seznam.cz</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="likvidaceOdstavce">
                             <p><strong>V současné době bude probíhat likvidace pojistných události po krupobití v rámci oprav metodou PDR:</strong></p>
                             <div class="row gx-5">
                                 <div class="col col-12 col-lg-6">
@@ -106,19 +141,19 @@
                                     <p>Peugeot Auto Kalný s.r.o. Plzeňská 872, 339 01 Klatovy</p>
                                 </div>
                             </div>
-                        </div>
+                        </div>-
                         <div class="vyridimeMy">
                             <p><a href="vyrizeni-pojistne-udalosti" title="Zjistěte více o vyřízení pojistné události ZDARMA">Vyřídíme pojistnou událost za vás zdarma</a></p>
-                        </div>
+                        </div>-->
                         <div class="text procNam indent">
                             <h2 class="greyCol underline">Proč svěřit opravu právě nám?</h2>
                             <ul>
-                                <li><a href="/oprava-karoserie" title="Více o opravě karoserie metodou PDR">Oprava karoserie bez lakování (PDR)</a></li>
+                                <li><a href="/oprava-karoserie.html" title="Více o opravě karoserie metodou PDR">Oprava karoserie bez lakování (PDR)</a></li>
                                 <li>Ušetříte až 60 % oproti konvenční opravě</li>
-                                <li><a href="opravy-po-kroupach">Opravy po kroupách do 2-3 dnů</a></li>
+                                <li><a href="opravy-po-kroupach.html">Opravy po kroupách do 2-3 dnů</a></li>
                                 <li>Doživotní záruka na opravy PDR</li>
                                 <li>Prohlídka vozu a rozpočet opravy ZDARMA</li>
-                                <li><a href="vyrizeni-pojistne-udalosti">Vyřízení pojistné události ZDARMA</a></li>
+                                <li><a href="vyrizeni-pojistne-udalosti.html">Vyřízení pojistné události ZDARMA</a></li>
                                 <li>Smluvní partneři po celé ČR (40x)</li>
                             </ul>
                         </div>
@@ -127,15 +162,20 @@
                         </div>
                         <div class="text">
                             <h2 class="greyCol underline">Paintless Dent Repair (PDR)</h2>
-                            <p><span style="font-weight:bold;"><a href="/metoda-pdr" title="Více o metodě PDR">Metoda PDR</a> představuje moderní způsob opravy karoserie bez nutnosti lakování. Metoda je velmi rychlá a šetrná k vozu. PDR se obvykle využívá pro opravy po krupobití nebo vyrovnání promáčklin z provozu</span>.</p>
-                            <p><a href="oprava-karoserie" title="Oprava karoserie PDR">Oprava karoserie</a> probíhá bez demontáže dílů, bez lakování a kytování. Využívá se paměťového efektu plechu a pomocí speciálního postupu a nástrojů jsou důlky odborně
-                                vyrovnány. PDR opravy preferují české i zahraniční pojišťovny. Máte-li zájem, můžete nás kdykoli <a href="/kontakty">kontaktovat</a> a rezervovat si termín nezávazné prohlídky vašeho vozidla!</p>
+                            <p><span style="font-weight:bold;"><a href="/metoda-pdr.html" title="Více o metodě PDR">Metoda PDR</a> představuje moderní způsob opravy karoserie bez nutnosti lakování. Metoda je velmi rychlá a šetrná k vozu. PDR se obvykle využívá pro opravy po krupobití nebo vyrovnání promáčklin z provozu</span>.</p>
+                            <p><a href="oprava-karoserie.html" title="Oprava karoserie PDR">Oprava karoserie</a> probíhá bez demontáže dílů, bez lakování a kytování. Využívá se paměťového efektu plechu a pomocí speciálního postupu a nástrojů jsou důlky odborně
+                                vyrovnány. PDR opravy preferují české i zahraniční pojišťovny. Máte-li zájem, můžete nás kdykoli <a href="/kontakty.html">kontaktovat</a> a rezervovat si termín nezávazné prohlídky vašeho vozidla!</p>
                         </div>
                         <div class="text noBackground indent">
                             <h2 class="greyCol" style="margin-bottom:20px;">Reportáž na Prima TV</h2>
                             <div class="videoContainer">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ss60_LtWw10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
                             </div>
+                        </div>
+                        <div id="yellowBox">
+                            <script>
+                                $("#yellowBox").load("yellowbox.html");
+                            </script>
                         </div>
                     </div>
                     <div class="col col-12 col-sm-4 pravySloupec">
@@ -153,7 +193,7 @@
                         </div>
                         <div class="pojistovny">
                             <h2 class="greenCol underline">Smluvní pojišťovny</h2>
-                            <a href="vyrizeni-pojistne-udalosti" rel="nofollow"><img src="img/pojistovny.jpg" alt="Smluvní pojišťovny" title="Smluvní pojišťovny" width="185"></a>
+                            <a href="vyrizeni-pojistne-udalosti.html" rel="nofollow"><img src="img/pojistovny.jpg" alt="Smluvní pojišťovny" title="Smluvní pojišťovny" width="185"></a>
                             <div class="text noBackground center">
                                 <h2 class="greenCol">Likvidační centrum</h2>
                                 <img src="img/likvidacniCentrum.png" alt="Vinicars ochranná známka" style="max-width: 300px; width: 80%; margin: 0 auto;">
@@ -163,15 +203,15 @@
                                 <img src="img/vinicars-ochranna-znamka.png" alt="Vinicars ochranná známka" style="max-width: 300px; width: 80%; margin: 0 auto;">
                             </div>
                         </div>
-                        <div class="text yellowGradient">
+                        <!--<div class="text yellowGradient">
                             <h3 class="greyCol underline center">Rezervujte si termín opravy</h3>
                             <p class="center">Zaujaly vás naše služby? Chcete se na něco zeptat nebo si domluvit termín prohlídky vozidla? Neváhejte nás kdykoli <a href="/kontakty.html">kontaktovat</a>.</p>
                             <p class="center">800 01 01 02</p>
                             <p class="center"><a href="mailto:info@vinicars.cz">info@vinicars.cz</a></p>
                             <p class="center"><a href="/kontakty.html" class="center">Najít smluvního partnera</a></p>
-                            <!--Online kalkulace -->
+                            Online kalkulace
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="row smluvniPartneri width100">
                         <h2 class="greenCol underline">Naši smluvní partneři pro vás po celé ČR</h2>
@@ -937,8 +977,7 @@
     </footer>
     <!-- /.container -->
 
-    <!-- Bootstrap core JavaScript
-================================================== -->
+    <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>
@@ -946,6 +985,15 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
+    <!-- Seznam retargeting -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var seznam_retargeting_id = 37259;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//c.imedia.cz/js/retargeting.js"></script>
+
 
 </body>
 

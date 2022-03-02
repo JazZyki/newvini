@@ -143,6 +143,10 @@ p {
     }
 }
 
+.hide {
+    display: none;
+}
+
 @import 'header';
 @import 'footer';
 @import 'carousels';
