@@ -358,3 +358,22 @@
         max-width: 290px;
     }
 }
+
+.expressLakovna {
+    .videoContainer {
+        position: relative;
+        padding-bottom: 37.25%;
+        height: 0;
+        margin-top: 1rem;
+    }
+    .procNam {
+        ul {
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+        }
+    }
+    .carousel {
+        margin-top: 1rem;
+    }
+}

@@ -662,6 +662,12 @@ footer .social .yt {
 .ukHelp p strong {
   font-size: 1.6rem;
 }
+.ukHelp .ucet {
+  padding-left: 0;
+}
+.ukHelp .qrKod {
+  padding-right: 0;
+}
 
 .smluvniPartneri {
   margin-top: 3rem;
@@ -1514,6 +1520,21 @@ footer .social .yt {
   float: right;
   shape-outside: polygon(33.77% 0px, 100% 0px, 99.72% 105.45%, -46.57% 105.92%);
   max-width: 290px;
+}
+
+.expressLakovna .videoContainer {
+  position: relative;
+  padding-bottom: 37.25%;
+  height: 0;
+  margin-top: 1rem;
+}
+.expressLakovna .procNam ul {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+.expressLakovna .carousel {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
