@@ -668,6 +668,9 @@ footer .social .yt {
 .ukHelp .qrKod {
   padding-right: 0;
 }
+.ukHelp .qrKod img {
+  width: 100%;
+}
 
 .smluvniPartneri {
   margin-top: 3rem;
@@ -1308,7 +1311,7 @@ footer .social .yt {
   transition: 0.3s;
 }
 .opravaKroupy .mainContent .kroupyPartneri .partneri div .partner.cp {
-  background-image: url("../img/partners/6.png");
+  background-image: url("../img/partners/cpGenerali.png");
 }
 .opravaKroupy .mainContent .kroupyPartneri .partneri div .partner.triglav {
   background-image: url("../img/partners/x8.png");
@@ -1408,7 +1411,10 @@ footer .social .yt {
   transition: 0.3s;
 }
 .pojistnaUdalost .partneri div .partner.cp {
-  background-image: url("../img/partners/6.png");
+  background-image: url("../img/partners/cpGenerali.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
 }
 .pojistnaUdalost .partneri div .partner.slavia {
   background-image: url("../img/partners/slavia.jpg");
@@ -1535,6 +1541,64 @@ footer .social .yt {
 }
 .expressLakovna .carousel {
   margin-top: 1rem;
+}
+
+.subaru {
+  padding: 0;
+}
+.subaru .foto {
+  position: relative;
+  margin-top: 2rem;
+}
+.subaru .foto:first-child {
+  margin-top: 0;
+}
+.subaru .foto:last-child {
+  margin-bottom: 2rem;
+}
+.subaru .foto .fotoImage {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.subaru .foto .icon {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+  margin-bottom: -6px;
+  border-radius: 100%;
+  position: absolute;
+  transition: 0.3s;
+}
+.subaru .foto .icon:hover {
+  background-color: #555;
+}
+.subaru .foto .icon.plusIco {
+  background-image: url("../img/plusIco.svg");
+}
+.subaru .foto .icon.first {
+  top: 42%;
+  left: 17%;
+}
+.subaru .foto .icon.second {
+  top: 80%;
+  left: 57%;
+}
+.subaru .foto .icon.third {
+  top: 45%;
+  left: 42%;
+}
+.subaru .foto .icon.fourth {
+  top: 54%;
+  left: 33%;
+}
+.subaru .foto .icon.fifth {
+  top: 73%;
+  left: 47%;
 }
 
 /*# sourceMappingURL=style.css.map */

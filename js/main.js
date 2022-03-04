@@ -74,3 +74,7 @@ document.getElementById("toContact").onclick = function() {
 document.getElementById("toPricelist").onclick = function() {
     location.href = "cenik.html";
 };
+
+document.getElementById("toPhoto").onclick = function() {
+    location.href = "foto.html";
+};

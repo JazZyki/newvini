@@ -131,7 +131,7 @@
                         display: inherit;
                         transition: .3s;
                         &.cp {
-                            background-image: url('../img/partners/6.png');
+                            background-image: url('../img/partners/cpGenerali.png');
                         }
                         &.triglav {
                             background-image: url('../img/partners/x8.png');
@@ -235,7 +235,10 @@
                 display: inherit;
                 transition: .3s;
                 &.cp {
-                    background-image: url('../img/partners/6.png');
+                    background-image: url('../img/partners/cpGenerali.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 90%;
                 }
                 &.slavia {
                     background-image: url('../img/partners/slavia.jpg');
@@ -375,5 +378,63 @@
     }
     .carousel {
         margin-top: 1rem;
+    }
+}
+
+.subaru {
+    padding: 0;
+    .foto {
+        position: relative;
+        margin-top: 2rem;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 2rem;
+        }
+        .fotoImage {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .icon {
+            width: 40px;
+            height: 40px;
+            background-color: green;
+            background-size: 70%;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 1rem;
+            margin-bottom: -6px;
+            border-radius: 100%;
+            position: absolute;
+            transition: .3s;
+            &:hover {
+                background-color: $grey2;
+            }
+            &.plusIco {
+                background-image: url('../img/plusIco.svg');
+            }
+            &.first {
+                top: 42%;
+                left: 17%;
+            }
+            &.second {
+                top: 80%;
+                left: 57%;
+            }
+            &.third {
+                top: 45%;
+                left: 42%;
+            }
+            &.fourth {
+                top: 54%;
+                left: 33%;
+            }
+            &.fifth {
+                top: 73%;
+                left: 47%;
+            }
+        }
     }
 }
