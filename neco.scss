@@ -1,0 +1,57 @@
+@import 'colors.scss';
+.header {
+    border-top: 10px solid $col-base;
+    .menu-top {
+        background-color: #343635;
+        .menu {
+            display: flex;
+            justify-content: end;
+            width: 80vw;
+            margin: auto;
+            max-width: 1200px;
+            font-family: 'Roboto COndensed', sans-serif;
+            font-size: 1.1rem;
+            color: $col-white;
+            .menu-item {
+                margin: 0 1rem;
+                padding: .25rem 0;
+                &:last-child {
+                    margin: 0 0 0 1rem;
+                }
+            }
+            .sub-menu {
+                display: none;
+            }
+        }
+    }
+    .header-menu {
+        .menu-container {
+            .menu-item {
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 1.1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .header-inner {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        .siteLogo {
+            display: flex;
+        }
+        .site-info {
+            width: 80%!important;
+            a {
+                h1 {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 3rem;
+                }
+            }
+            > :not(:first-child) {
+                margin: 0;
+            }
+        }
+    }
+}
