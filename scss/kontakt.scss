@@ -95,6 +95,12 @@
                         background-image: url('../img/people/global-expert.jpg');
                         background-position: 0 0%;
                     }
+                    &.cb-auto {
+                        background-image: url('../img/likvidace/cb-auto.jpg');
+                    }
+                    &.ac-kei {
+                        background-image: url('../img/likvidace/ac_kei.jpg');
+                    }
                 }
             }
         }

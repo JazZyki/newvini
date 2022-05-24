@@ -109,6 +109,10 @@ p {
     text-align: center;
 }
 
+.alignLeft {
+    text-align: left;
+}
+
 .indent {
     margin: 1rem 0;
 }
@@ -157,3 +161,4 @@ p {
 @import 'recenze';
 @import 'onas';
 @import 'other';
+@import 'likvidace';
