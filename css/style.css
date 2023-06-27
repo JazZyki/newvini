@@ -919,12 +919,21 @@ footer .social .yt {
   background-image: url("../img/people/global-expert.jpg");
   background-position: 0 0%;
 }
+.teamBlock .image-flip .frontside .card .card-body.urban {
+  background-image: url("../img/people/urban.jpg");
+  background-position: 0 0%;
+}
 .teamBlock .image-flip .frontside .card .card-body.cb-auto {
   background-image: url("../img/likvidace/cb-auto.jpg");
 }
 .teamBlock .image-flip .frontside .card .card-body.ac-kei {
   background-image: url("../img/likvidace/ac_kei.jpg");
 }
+
+.teamBlock .image-flip .frontside .card .card-body.ac-kubicek {
+  background-image: url("../img/likvidace/autokubicek.jpg");
+}
+
 .teamBlock .image-flip .backside {
   width: 100%;
   height: 300px;
