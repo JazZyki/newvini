@@ -789,7 +789,7 @@ footer .social .yt {
   border-right: 1px dotted #949494;
 }
 .cenik .mainContent .tab-content table.opravyPromackliny {
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 .cenik .mainContent .tab-content table.opravyPromackliny td:first-child,
@@ -802,7 +802,7 @@ footer .social .yt {
   border-bottom: none;
 }
 .cenik .mainContent .tab-content .promackliny h3 {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 .cenik .mainContent .tab-content .kroupy h3 {
