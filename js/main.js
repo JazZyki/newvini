@@ -1,8 +1,5 @@
-/* Function(s) to expand top menu */
 (function ($) {
-
     "use strict";
-
     $('.language').hover(function () {
         var $this = $(this);
         $this.addClass('show');
@@ -64,20 +61,6 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
-
-// Buttons hrefs
-/*
-document.getElementById("toContact").onclick = function() {
-    location.href = "kontakty.html";
-};
-
-document.getElementById("toPricelist").onclick = function() {
-    location.href = "cenik.html";
-};
-
-document.getElementById("toPhoto").onclick = function() {
-    location.href = "foto.html";
-};*/
 
 const isForm = document.querySelector('.service-inquiry')
 
@@ -155,3 +138,5 @@ function addCookiesBanner() {
     script.setAttribute('data-blockingmode', 'auto')
     head.appendChild(script)
 }
+
+addCookiesBanner()
