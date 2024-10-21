@@ -1,0 +1,440 @@
+.opravaKaroserie {
+    .mainContent {
+        .uvod {
+            align-items: stretch;
+        }
+        .videoContainer {
+            padding-bottom: 32.25%;
+        }
+        .procNam {
+            &.indent {
+                margin: 0;
+                height: 100%;
+            }
+            ul {
+                column-count: 2;
+            }
+        }
+        .buttonGroup {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            margin: 1rem;
+        }
+        .blueParagraph {
+            color: #fff;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            background-color: $blueColor;
+            padding: 2rem;
+            &.indent {
+                margin: 1rem 12px 1rem 0;
+            }
+            p {
+                margin-bottom: 0;
+                text-align: center;
+                &:first-child {
+                    margin-bottom: 2rem;
+                }
+                strong {
+                    font-size: 2rem;
+                    padding-left: 1rem;
+                }
+            }
+        }
+        .odhalteTajemstvi {
+            background: $baseColor url(../img/uncover.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            p {
+                width: 70%;
+                color: #fff;
+                margin-bottom: 0;
+            }
+            a {
+                color: #fff;
+                border-bottom: 2px solid rgba(0, 0, 0, 0);
+                transition: .3s;
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+.opravaKroupy {
+    .mainContent {
+        margin-top: -2rem;
+        background-image: url('../img/storm.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-attachment: fixed;
+        h1 {
+            padding-top: 3.5rem;
+        }
+        .uvod {
+            align-items: stretch;
+        }
+        .videoContainer {
+            padding-bottom: 32.25%;
+        }
+        .procNam {
+            ul {
+                column-count: 1;
+            }
+        }
+        .buttonGroup {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            margin: 1rem;
+        }
+        .blueParagraph {
+            color: #fff;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            background-color: $blueColor;
+            padding: 2rem;
+            &.indent {
+                margin: 1rem 12px 1rem 0;
+            }
+            p {
+                margin-bottom: 0;
+                text-align: center;
+                &:first-child {
+                    margin-bottom: 2rem;
+                }
+                strong {
+                    font-size: 2rem;
+                    padding-left: 1rem;
+                }
+            }
+        }
+        .kroupyPartneri {
+            .partneri {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin: 0 1rem;
+                div {
+                    width: 31%;
+                    height: auto;
+                    margin-bottom: 1rem;
+                    .partner {
+                        width: 100%;
+                        padding: 50%;
+                        background-size: contain;
+                        background-color: #fff;
+                        border-radius: 100%;
+                        display: inherit;
+                        transition: .3s;
+                        &.cp {
+                            background-image: url('../img/partners/cpGenerali.png');
+                        }
+                        &.triglav {
+                            background-image: url('../img/partners/x8.png');
+                        }
+                        &.axa {
+                            background-image: url('../img/partners/4.png');
+                        }
+                        &.uniqa {
+                            background-image: url('../img/partners/1.png');
+                        }
+                        &.koop {
+                            background-image: url('../img/partners/12.png');
+                        }
+                        &.cpp {
+                            background-image: url('../img/partners/cpp.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 80%;
+                        }
+                        &.allianz {
+                            background-image: url('../img/partners/14.png');
+                        }
+                        &.generali {
+                            background-image: url('../img/partners/10.png');
+                        }
+                        &.csob {
+                            background-image: url('../img/partners/13.png');
+                        }
+                        &:hover {
+                            transform: scale(1.15);
+                        }
+                    }
+                }
+            }
+            .map {
+                position: relative;
+                margin-bottom: 40px;
+                background-image: url('../img/mapa/map-hp.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 400px;
+                height: 235px;
+                a {
+                    background-color: $blueColor;
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 100%;
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .odhalteTajemstvi {
+            background: $blueColor url(../img/uncover2.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            p {
+                width: 100%;
+                color: #fff;
+                text-shadow: 0 0 5px #000;
+                margin-bottom: 0;
+            }
+            a {
+                color: #fff;
+                border-bottom: 2px solid rgba(0, 0, 0, 0);
+                transition: .3s;
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+.pojistnaUdalost {
+    .paddingText {
+        padding: 1rem;
+        margin: 0;
+    }
+    .partneri {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 3rem auto;
+        width: 70%;
+        div {
+            width: 17%;
+            max-width: 130px;
+            height: auto;
+            margin: 1rem;
+            .partner {
+                width: 100%;
+                padding: 50%;
+                background-size: contain;
+                background-color: #fff;
+                border-radius: 100%;
+                display: inherit;
+                transition: .3s;
+                &.cp {
+                    background-image: url('../img/partners/cpGenerali.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 90%;
+                }
+                &.slavia {
+                    background-image: url('../img/partners/slavia.jpg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                &.axa {
+                    background-image: url('../img/partners/4.png');
+                }
+                &.uniqa {
+                    background-image: url('../img/partners/1.png');
+                }
+                &.koop {
+                    background-image: url('../img/partners/12.png');
+                }
+                &.cpp {
+                    background-image: url('../img/partners/cpp.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 80%;
+                }
+                &.allianz {
+                    background-image: url('../img/partners/14.png');
+                }
+                &.generali {
+                    background-image: url('../img/partners/10.png');
+                }
+                &.csob {
+                    background-image: url('../img/partners/13.png');
+                }
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+    .vyhody {
+        margin-top: 2rem;
+        width: 100%;
+        position: relative;
+        .vyhoda {
+            width: 80%;
+            margin: auto;
+            background: rgb(85, 85, 85);
+            background: linear-gradient(0deg, rgba(85, 85, 85, 1) 0%, rgba(148, 148, 148, 1) 100%);
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            position: relative;
+            &.vyhoda1,
+            &.vyhoda2 {
+                &::after {
+                    content: '';
+                    width: 30px;
+                    height: 30px;
+                    background: rgb(148, 148, 148);
+                    background: linear-gradient(135deg, rgba(85, 85, 85, 1) 50%, rgba(68, 68, 68, 1) 100%);
+                    display: inline-block;
+                    position: absolute;
+                    bottom: -.9rem;
+                    left: calc(50% - 15px);
+                    transform: rotate(45deg);
+                    z-index: -1;
+                }
+            }
+            &.vyhoda2,
+            &.vyhoda3 {
+                margin-top: 1.3rem;
+            }
+            &.vyhoda3 {
+                background: rgb(11, 68, 24);
+                background: linear-gradient(0deg, rgba(11, 68, 24, 1) 0%, rgba(22, 142, 51, 1) 100%);
+            }
+        }
+    }
+}
+
+.tooltip {
+    .tooltip-inner {
+        padding: 1rem;
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: .8rem;
+            a {
+                font-size: .9rem;
+                color: $baseColor;
+            }
+        }
+    }
+}
+
+.benefits {
+    margin: 2rem auto 3rem;
+    li {
+        font-size: 1.2rem;
+        padding-left: 28px;
+        margin-bottom: .5rem;
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-image: url('../img/checked.svg');
+            background-size: contain;
+            margin-right: -18px;
+            position: relative;
+            left: -28px;
+        }
+    }
+}
+
+.vedeliJste {
+    background-color: rgba(0, 0, 0, 0);
+    .historyFoto {
+        float: right;
+        shape-outside: polygon(33.77% 0px, 100% 0px, 99.72% 105.45%, -46.57% 105.92%);
+        max-width: 290px;
+    }
+}
+
+.expressLakovna {
+    .videoContainer {
+        position: relative;
+        padding-bottom: 37.25%;
+        height: 0;
+        margin-top: 1rem;
+    }
+    .procNam {
+        ul {
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+        }
+    }
+    .carousel {
+        margin-top: 1rem;
+    }
+}
+
+.subaru {
+    padding: 0;
+    .foto {
+        position: relative;
+        margin-top: 2rem;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 2rem;
+        }
+        .fotoImage {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .icon {
+            width: 40px;
+            height: 40px;
+            background-color: green;
+            background-size: 70%;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 1rem;
+            margin-bottom: -6px;
+            border-radius: 100%;
+            position: absolute;
+            transition: .3s;
+            &:hover {
+                background-color: $grey2;
+            }
+            &.plusIco {
+                background-image: url('../img/plusIco.svg');
+            }
+            &.first {
+                top: 42%;
+                left: 17%;
+            }
+            &.second {
+                top: 80%;
+                left: 57%;
+            }
+            &.third {
+                top: 45%;
+                left: 42%;
+            }
+            &.fourth {
+                top: 54%;
+                left: 33%;
+            }
+            &.fifth {
+                top: 73%;
+                left: 47%;
+            }
+        }
+    }
+}

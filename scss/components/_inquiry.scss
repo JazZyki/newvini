@@ -1,0 +1,87 @@
+.service-inquiry {
+    overflow-x: hidden;
+    .hidden-input {
+        display: none;
+    }
+
+    .row {
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .col {
+        label,
+        h4 {
+            margin: 0 0 5px 0;
+            color: green;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        &.col-6 {
+            width: calc(50% - 3rem);
+        }
+        &.col-12 {
+            width: calc(100% - 2rem);
+        }
+
+        input {
+            &:not([type="radio"]) {
+                //width: calc(100% - 2rem);
+            }
+
+            &#file {
+                width: 97%;
+            }
+        }
+
+        textarea {
+            width: 97%;
+        }
+
+        .form-check-input:checked {
+            background-color: green;
+            border-color: green;
+
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba(0, 128, 0, 0.226);
+            }
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 128, 0, 0.226);
+        }
+
+        .custom-input-wrapper {
+            padding-left: 0;
+        }
+
+        #insurance-name {
+            margin-top: 1rem;
+        }
+
+        .form-check {
+            margin-bottom: 0;
+        }
+    }
+
+    .btn {
+        &.btn-primary {
+            min-width: 150px;
+            margin-right: 2rem;
+            font-weight: 700;
+            color: white;
+            background-color: green;
+            border-color: green;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: green;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .align-right {
+        text-align: right;
+    }
+}

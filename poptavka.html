@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Opravy po krupobití provádíme moderní metodou PDR, bez nutnosti lakování. Vůz opravou neztrácí na hodnotě - Vinicars">
+    <meta name="keywords" content="oprava karoserie, metoda pdr, vinicars">
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="author" content="Jakub Zykl">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Opravy po krupobití po celé ČR - VINICARS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-- Custom styles -->
+     <link href="scss/normalize.css" rel="stylesheet">
+     <link href="scss/main.css" rel="stylesheet">
+ 
+
+    <!-- Import jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-25042364-1', 'auto', {
+            'siteSpeedSampleRate': 90
+        });
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body class="homePage">
+    <header id="header">
+        <script>
+            $("#header").load("header.html");
+        </script>
+    </header>
+    <div id="content" class="mainContent">
+        <main role="main">
+            <div class="wrapper service-inquiry">
+                <h1 class="greenCol mt-3">Poptávkový formulář</h1>
+                <form action="inquiry.php" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col col-6 mb-3">
+                            <label class="form-label">Položky formuláře označené hvězdičkou (*) jsou povinné.
+                            </label>
+                        </div>
+                        <div class="col col-6 mb-3">
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label for="name" class="form-label">Jméno: *</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label for="surname" class="form-label">Příjmení: *</label>
+                            <input type="text" class="form-control" id="surname" name="surname" required>
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label for="phone" class="form-label">Telefon: *</label>
+                            <input type="phone" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label for="email" class="form-label">E-mail: *</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label for="car-branch" class="form-label">Značka vozdila: *</label>
+                            <input type="text" class="form-control" id="car-branch" name="car-branch" required>
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label for="car-type" class="form-label">Typ vozdila: *</label>
+                            <input type="text" class="form-control" id="car-type" name="car-type" required>
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label for="spz" class="form-label">SPZ: *</label>
+                            <input type="text" class="form-control" id="spz" name="spz" required>
+                        </div>
+                        <div class="col col-6 mb-3">
+                        </div>
+                        <div class="col col-12 divider">
+                            <hr>
+                        </div>
+                        <div class="col col-6 mb-3 descruction-type">
+                            <h4>Typ poškození</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio1" checked>
+                                <label class="form-check-label" for="flexRadio1">
+                                    Kroupy
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio2">
+                                <label class="form-check-label" for="flexRadio2">
+                                    Jiné
+                                </label>
+                            </div>
+                            <label for="dest-description" class="hidden-input">Jiný typ poškození:</label>
+                            <input type="text" class="form-control" id="dest-description" name="dest-description"
+                                placeholder="Popište typ poškození" disabled>
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label class="form-check-label" for="combo-select-insurance">Pojišťovna</label>
+                            <select id="combo-select-insurance" class="form-select combo-select-insurance" name="combo-select-insurance">
+                                <option selected>Vyberte si Vaši pojišťovnu</option>
+                                <option value="Allianz">Allianz</option>
+                                <option value="Axa">Axa</option>
+                                <option value="ČPP">ČPP</option>
+                                <option value="ČSOB pojišťovna">ČSOB pojišťovna</option>
+                                <option value="Direct">Direct</option>
+                                <option value="Generali">Generali</option>
+                                <option value="Hasičská pojišťovna">Hasičská pojišťovna</option>
+                                <option value="Kooperativa">Kooperativa</option>
+                                <option value="Pillow">Pillow pojišťovna</option>
+                                <option value="Servisní pojišťovna">Servisní pojišťovna</option>
+                                <option value="Slavia pojišťovna">Slavia pojišťovna</option>
+                                <option value="Uniqua">Uniqua</option>
+                                <option value="VZP">VZP</option>
+                                <option value="custom" id="custom-option">Jiná pojišťovna...</option>
+                            </select>
+                            <div id="custom-input-wrapper" class="hidden-input custom-input-wrapper form-check">
+                                <label for="insurance-name" class="hidden-input">Jiná pojišťovna:</label>
+                            <input type="text" class="form-control" id="insurance-name" name="insurance-name"
+                                placeholder="Napište název pojišťovny">
+                            </div>
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label for="insurance-number" class="form-label">Číslo pojistné události:</label>
+                            <input type="text" class="form-control" id="insurance-number" name="insurance-number">
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label for="repair-place" class="form-label">Místo opravy:</label>
+                            <input type="text" class="form-control" id="repair-place" name="repair-place">
+                        </div>
+            
+                        <div class="col col-12 mb-3">
+                            <label for="notice" class="form-label">Poznámka</label>
+                            <textarea class="form-control" id="notice" rows="3" name="notice"></textarea>
+                            
+                        </div>
+                        <!--<div class="col col-12 mb-3">
+                            <label for="file" class="form-label">Přiložte fotodokumentaci</label>
+                            <input type="file" id="file" name="file[]" multiple><br>
+                        </div>-->
+                        <div class="col col-12 mb-3 align-right">
+                            <button type="submit" class="btn btn-primary">Odeslat</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer id="footer">
+        <script>
+            $("#footer").load("footer.html");
+        </script>
+    </footer>
+
+    </div>
+    </footer>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Seznam retargeting -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var seznam_retargeting_id = 37259;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//c.imedia.cz/js/retargeting.js"></script>
+
+
+</body>
+
+</html>

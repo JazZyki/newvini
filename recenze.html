@@ -17,8 +17,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom styles -->
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="scss/normalize.css" rel="stylesheet">
+    <link href="scss/main.css" rel="stylesheet">
 
     <!-- Import jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -45,7 +45,7 @@
     </script>
 </head>
 
-<body class="homePage">
+<body class="homePage reviews">
     <header id="header">
         <script>
             $("#header").load("header.html");
@@ -57,10 +57,8 @@
                 <h1 class="mainHead greenCol">Zkušenosti a recenze zákazníků</h1>
                 <h2 class="leadHead greyCol">Vždy se snažíme poskytovat 100% služby. Na vaší spokojenosti nám velmi záleží. Děkujeme všem zákazníkům za důvěru a přejeme šťastné cesty bez promáčklin.
                 </h2>
-                <button type="button" class="btn btn-success btn-lg">Přidat nové hodnocení</button>
-                <p class="nazor">I Váš názor je pro nás důležitý</p>
-                <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 5022.6px;">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 0px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Oprava prohlubní na dveřích perfektně provedena. Rychle a kvalitně na 100% bez čekání. Maximální spokojenost při samotném jednání a příjmu auta do opravy (pí. L. Hulová), tak i s prací klempíře. Smekám před Vaším jednáním
@@ -69,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 0px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text"> Dobrý den, u této firmy jsem si nechal opravit poškození karosérie mého vozu BMW 740D xDrive. Jednalo se o přední kapotu boční dveře a kufr. Upozorňuji že karoserie a dveře jsou materiál Aluminium. Prní co bych chtěl hodnotit
@@ -79,7 +77,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 0px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text"> Služby Vinicars mohu z vlastní zkušenosti doporučit (oprava metodou PDR). Promáčklinu levého blatníku opravili na počkání (cca 2 hodiny čekání, s kávou a TV) a bez jakýchkoliv viditelných stop po předchozím poškození. Sice
@@ -88,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 296px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text"> Firma Vinicars je opravdu výborná firma, která dělá svou práci opravdu skvěle. První zkušenost - již v nedávné minulosti VW Passat, promáčklé dveře bez poškození laku - oprava proběhla na počkání a výsledek fascinující,
@@ -99,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 383.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text"> Co s důlkem na kapotě a navíc na hraně nad světlem? Je to sice neštastné místo a od všech, co viděli jamku, jsem slyšel - že to nejde, to se bude kytovat a lakovat. Nedalo mi to a rozhodl jsem se prověřit, co ve Vinicarsu
@@ -110,7 +108,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 599.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text"> Perfektně odvedená práce, rychlé jednání, super cena. V případě potřeby ráda znovu využiji služby firmy VINICARS. Doporučuji
@@ -118,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 775.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text"> Dnes 18.10.2018 jsem byl na opravu pozván do Plzně. Mám pro technika, který opravu prováděl, jen slova chvály!!! Pán dokázal, že zázraky existují. Je neuvěřitelné s jakou pečlivostí a trpělivostí opravu provedl. Klaním
@@ -127,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 895.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text"> Myslím si, že firma Vinicars nepotřebuje žádnou reklamu, protože dobré věci a služby se prodávají samy. Jsem naprosto nadšený s jakou rychlostí byla vyřešena moje oprava. Od nahlášení až po samotnou opravu, perfektní komunikace,
@@ -136,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 1015.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text"> Přijel jsem, auto mi odvezli okamžitě a bez objednání. Velmi příjemné paní i prostředí. Za 30 minut jsem odjížděl s opravenou kapotou a po promáčklině ani památky. Jsem nadmíru spokojen.
@@ -144,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 1167.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Termín opravy byl dohodnut dopředu, kdy jsem vozidlo přistavil na osmou hodinu ranní. Na vozidle byla promáčklina na předním blatníku a obou zadních dveřích. V jenom případě byl prasklý lak. Oprava byla provedena během
@@ -156,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 1239.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Komunikace s touto firmou je perfektní. Za hodinu od odeslání fotek poškození jsem měl přibližnou cenu opravy a za další 2 dny byla oprava v Brně provedena. Technik je rychlý a precizní. Určitě služby Vinicars využiji do
@@ -165,7 +163,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 1239.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">C sloupek a přechod mezi dveřmi a střechou poškozený od ledu spadlého ze střechy chtěli v autorizovaném servisu opravovat standardně vyklepáváním a lakováním, kalkulace opravy za desítky tisíc. Oprava metodou PDR ve Vinicars
@@ -174,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 1511.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Ikdyž se snažím parkovat vždy na vzdálenějším místě parkoviště, bylo mi to houby platné. Parkovací místo, kam by se vešel i náklaďák, bylo pro jednu rodinku stále malé. Výsledkem byla pořádný důlek v PP dveřích od jejich
@@ -186,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 1655.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Precizní oprava promáčkliny předního blatníku. Po promáčklině cca 4cm ani náznak opravy a blatník, jako nový. Bezproblémová komunikace a příjemné jednání. Čekací doba je úměrná poškození. Doporučuji všem.
@@ -194,7 +192,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 1903.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Při vrácení auta na operativní leasing jsem byl při prohlídce upozorněn, že mi bude naúčtováno cca 20000 za opravu dvou drobných důlků na střeše a dveřích. Situaci jsem potřeboval vyřešit a to se taky díky této firmě podařilo.
@@ -205,17 +203,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 2039.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Mohu doporučit, porovnával jsem různé nabídky, Vinicars měl jednu z nejlepších cen, technik dodržel čas, s kvalitou jsem spokojen, rovněž slečna z centrály byla velmi příjemná a na základě zaslaných fotek byla schopná udělat
                                     přesnou cenovou nabídku, kterou dodrželi. Profesionalita a super kvalita, prostě klobouk dolů. A ještě poznámka na okraj. Podle některých jmen a slabého přízvuku tipuji, že ve firmě podnikají, pracují původem cizinci
-                                    z východu, netuším jestli z Ukrajiny nebo odjinud, to je jedno, svým profesionálně zvládnutým řemeslem dělají čest sobě i zemi odkud pochází &#128522;
+                                    z východu, netuším jestli z Ukrajiny nebo odjinud, to je jedno, svým profesionálně zvládnutým řemeslem dělají čest sobě i zemi odkud pochází 😊
                                     <span class="card-title"><strong>Petr P.,</strong> Mini Cooper S R53 - 25.8.2017 </span></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 2263.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Dnes jsem byl na opravě dvou promáčklin zadní části karoserie ve společnosti Vinicars, jež mi byli způsobeny nejspíše dveřmi jiného vedle stojícího automobilu. Přijel jsem bez objednání, ujal se mi nejspíš ten nejlépe vypadající
@@ -225,7 +223,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 2511.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Doporucuji, proste bomba, komplikovane poskozeni karoserie, pote, co se nam vandal prosel po strese, dokazali panove z Vinicars vyresit peclivou a soustredenou praci. Na aute neni ani stopa po predchozim mnohonasobnem poskozeni.
@@ -234,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 2551.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Velmi profesionální služby na vysoké úrovni za příznivou cenu, navíc vstřícný přístup při objednání i během opravy poškození vozu. Po lehké promáčklině na kapotě zhruba za čtvrt hodiny ani stopa, opět hladká plocha. Mezitím
@@ -243,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 2703.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Oprava dokonalá i když poškození bylo dost velké, velmi příjemné a slušné jednání, komunikace milá a rychlá. Služeb jsem využila již po několikáté a určitě v budoucnu využiji znovu. Mohu jen doporučit a děkuji.
@@ -251,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 2807.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Velmi seriózní, příjemní, neslibují zázraky, ale umí je nakonec dodat. Odevzdáno po náročné opravě v tak bezvadné kondici, že jsem nebyl schopen určit místo poškození. To vše na počkání.
@@ -259,7 +257,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 2943.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Perfektní přístup a šikovné ruce. Měl jsem důlky na střeše a po opravě byla střecha jak zrcadlo. Můžu jen doporučit!
@@ -267,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 2951.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Máte týden staré auto, zaparkujete na okraji parkoviště, těsně u kraje, aby se vedle vás nikdo "nelepil" a neodřel vám dveře, ale když se vrátíte, nevěříte vlastním očím. Ačkoliv jste vozu vedle vašeho nechali místa, že
@@ -281,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 3031.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">VINICARS vřele doporučuji. Seriozní vystupování a špičkově odvedená práce! Promáčklina předních dveří v oblasti B sloupku na Škodě Yeti. Vozidlo si prohlédli na parkovišti, převzali a nechali mě posadit do místnosti s televizí
@@ -291,7 +289,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 3119.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">100% spokojenost. Provádějí neuvěřitelnou práci. Měl jsem nabourané dveře na BMW 5, ale nebyl poškozen lak, verdikt všech autoservisů, dveře na výměnu, což znamenalo 17000 Kč. Firma Vinicars mi je opravila za pouhých 4500
@@ -300,7 +298,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 3471.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Po krupobití na voze cca 300 důlků. Opraveno za jeden den a to bez známek po požkození. Jsem nadšen. Moc děkuji za skvělou práci. Auto je jako nové. Rád doporučím.
@@ -308,7 +306,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 3487.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Rychlost opravy, komunikace techniků, kvalita provedení = SUPER!
@@ -316,7 +314,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 3615.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Jel jsem specielně z ČB do Prahy ohledně promáčklé střechy a vůbec toho nelituji. Po čekání asi 2 hod jsem dostal auto zpět a nevěřil jsem vlastním očím. Oprava na 100%, ani památky po nějakém poškození. Jsou to machři
@@ -325,7 +323,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 3695.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Jsem z okolí Č.Budějovic a byl jsem v Praze s vozidlem na reklamaci převodovky. Předem jsem zaslal fotografie poškození a dohodnul jsem si mojí návštěvu. Vlastní oprava se uskutečnila včera 27.1.2016 v pozdním odpoledni.
@@ -338,7 +336,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 3983.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Přestože jsem šel do této firmy na doporučení, byl jsem s ohledem na místo poškození (zadní sloupek u 5tých dveří) trochu připraven, že oprava nebude 100%. Při přejímání auta jsem byl na možnost, že se oprava nepodaří na
@@ -348,7 +346,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 4039.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Firmu vřele doporučuji měl jsem promáčklé boční dveře a po opravě na nich není ani známka poškození, prostě super.
@@ -356,7 +354,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 4215.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Dobrý den, firmu VINICARS všem vřele doporučuji. Jedná se o odborníky na slovo vzaté. Vstřícnost, perfektní vystupování a ještě lepší odvedená práce.
@@ -364,7 +362,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 4415.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Byl jsem příjemně překvapen výsledkem opravy promáčklých dveří. Technik odvedl vynikající práci. Uvítal jsem i možnost převzetí auta a zaplacení zakázky přes autoservis K.E.I. Brno. Děkuji!!
@@ -372,7 +370,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 4447.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">VINICARS vřele doporučuji, rezervace termínu, předběžná cena, doba opravy a nakonec samotná oprava - vše proběhlo rychle a bez problémů. S opravou jsem velice spokojen, a to i díky ochotnému a vstřícnému personálu VINICARS.
@@ -381,7 +379,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 0%; top: 4639.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Rychlost a kvalita opravy dle ocekavani. Komunikace vyborna. Jsem maximalne spokojen! Dekuji.
@@ -389,7 +387,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 66.6666%; top: 4654.6px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Také jsem byl nucen využít služeb společnosti Vinicars, která umí opravit důlky po kroupách metodou vytlačování důlků zpět bez nutnosti lakování. Mě odborníci z Vinicarsu vrátili do původního stavu část levého C-sloupku,
@@ -398,7 +396,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard">
+                    <div class="col-sm-6 col-lg-4 mb-4 recenzeCard" style="position: absolute; left: 33.3333%; top: 4767.3px;">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Ve Vinicars spravujou perfektně. Nechával jsem tam dělat některý ďolíky, poslal jsem tam i souseda s namačknutým volvem a přijel nadšenej!
@@ -407,6 +405,48 @@
                         </div>
                     </div>
                 </div>
+                <form action="review.php" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <h2 class="greenCol">Napište nám svůj názor</h2>
+                        <label class="form-label">Položky formuláře označené hvězdičkou (*) jsou povinné.
+                        </label>
+                        <div class="col col-6 mb-3">
+                            <div class="row">
+                                <div class="col col-12 mb-3">
+                                    <label for="name" class="form-label">Jméno a příjemní: *</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col col-12 mb-3">
+                                    <label for="email" class="form-label">E-mail: *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col col-12 mb-3">
+                                    <label for="car-type" class="form-label">Značka automobilu *</label>
+                                    <input type="text" class="form-control" id="car-type" name="car-type" required>
+                                </div>
+                                <div class="col col-12 mb-3">
+                                    <label for="repair-date" class="form-label">Datum opravy *</label>
+                                    <input type="text" class="form-control" id="repair-date" name="repair-date" required>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <div class="row">
+                                <div class="col col-12 mb-3">
+                                    <label for="review" class="form-label">Vaše hodnocení: *</label>
+                                    <textarea class="form-control" id="review" rows="12" name="review"></textarea>
+                                </div>                                
+                                <div class="col col-12 mb-3 align-right">
+                                    <button type="submit" class="btn btn-primary btn-success">Odeslat hodnocení</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </form>
+                <p class="nazor" id="reviews">I Váš názor je pro nás důležitý</p>
+                
                 <div id="yellowBox">
                     <script>
                         $("#yellowBox").load("yellowbox.html");

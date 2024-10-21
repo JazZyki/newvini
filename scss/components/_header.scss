@@ -1,0 +1,199 @@
+#header {
+    width: 100%;
+    padding: 1rem 0 0;
+    background-color: #fff;
+    .topNavigation {
+        background-color: #fff !important;
+        width: 80vw;
+        max-width: $max-width;
+        margin: auto;
+        .brandLogo {
+            img {
+                width: 25vmin;
+            }
+        }
+        .otherHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .language {
+                margin-left: 5vmin;
+                .czech {
+                    color: $grey;
+                    &:hover {
+                        color: $grey2;
+                    }
+                    &::before {
+                        content: url('../img/flags/cz.svg');
+                        width: 25px;
+                        display: inline-block;
+                        margin-right: .5rem;
+                        height: 19px;
+                    }
+                }
+                .languageSelector {
+                    .dropdown-item {
+                        display: flex;
+                        align-items: center;
+                        padding: .5rem;
+                    }
+                    .slovak,
+                    .deutsch,
+                    .ukrain,
+                    .english,
+                    .french {
+                        &::before {
+                            width: 25px;
+                            display: inline-block;
+                            margin-right: .5rem;
+                            height: 19px;
+                        }
+                    }
+                    .slovak {
+                        &::before {
+                            content: url('../img/flags/sk.svg');
+                        }
+                    }
+                    .deutsch {
+                        &::before {
+                            content: url('../img/flags/de.svg');
+                        }
+                    }
+                    .ukrain {
+                        &::before {
+                            content: url('../img/flags/ua.svg');
+                        }
+                    }
+                    .english {
+                        &::before {
+                            content: url('../img/flags/gb.svg');
+                        }
+                    }
+                    .french {
+                        &::before {
+                            content: url('../img/flags/fr.svg');
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainMenu {
+        margin-top: 15px;
+        nav {
+            background: rgb(11, 68, 24);
+            background: linear-gradient(0deg, rgba(11, 68, 24, 1) 0%, rgba(22, 142, 51, 1) 100%);
+            .container-fluid {
+                width: 80vw;
+                max-width: $max-width;
+                .navbar-brand {
+                    img {
+                        height: 30px;
+                        opacity: .7;
+                        transition: .3s;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+                .nav-item {
+                    background: none;
+                    font: inherit;
+                    line-height: 1;
+                    margin: 0 10px;
+                    padding: 6px;
+                    position: relative;
+                    color: #fff;
+                    transition: 0.35s;
+                    &:hover,
+                    &:focus {
+                        box-shadow: inset 12.5em 0 0 0 $baseColor2;
+                        color: #fff;
+                    }
+                    a {
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                    .largeMenu {
+                        a {
+                            color: $grey;
+                        }
+                        &.show {
+                            display: flex;
+                        }
+                        li {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 220px;
+                            .dropdown-item {
+                                white-space: normal;
+                                text-align: center;
+                            }
+                            .sluzba1 {
+                                &:before {
+                                    content: '';
+                                    width: 100px;
+                                    height: 100px;
+                                    display: block;
+                                    margin: auto;
+                                    background-image: url("../img/s1.png");
+                                    background-position: top center;
+                                }
+                            }
+                            .sluzba2 {
+                                &:before {
+                                    content: '';
+                                    width: 100px;
+                                    height: 100px;
+                                    display: block;
+                                    margin: auto;
+                                    background-image: url("../img/s5.png");
+                                    background-position: top center;
+                                }
+                            }
+                            .sluzba3 {
+                                &:before {
+                                    content: '';
+                                    width: 100px;
+                                    height: 100px;
+                                    display: block;
+                                    margin: auto;
+                                    background-image: url("../img/s3.png");
+                                    background-position: top center;
+                                }
+                            }
+                            .sluzba4 {
+                                &:before {
+                                    content: '';
+                                    width: 100px;
+                                    height: 100px;
+                                    display: block;
+                                    margin: auto;
+                                    background-image: url("../img/s4.png");
+                                    background-position: top center;
+                                }
+                            }
+                            &:hover {
+                                a {
+                                    color: $baseColor;
+                                    background-color: #fff;
+                                    &.sluzba2 {
+                                        color: $blueColor;
+                                    }
+                                }
+                                .sluzba1,
+                                .sluzba2,
+                                .sluzba3,
+                                .sluzba4 {
+                                    &:before {
+                                        background-position: bottom center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

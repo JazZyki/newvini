@@ -66,7 +66,7 @@ var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
 })
 
 // Buttons hrefs
-
+/*
 document.getElementById("toContact").onclick = function() {
     location.href = "kontakty.html";
 };
@@ -77,4 +77,47 @@ document.getElementById("toPricelist").onclick = function() {
 
 document.getElementById("toPhoto").onclick = function() {
     location.href = "foto.html";
-};
+};*/
+
+const isForm = document.querySelector('.service-inquiry')
+
+if(isForm) {
+    newInsuranceOption()
+    descructionType()
+}
+
+
+function newInsuranceOption() {
+    const comboSelect = document.getElementById('combo-select-insurance')
+    const customInput = document.querySelector('.custom-input-wrapper')
+    const customOption = document.querySelector('.custom-input')
+    
+    comboSelect.addEventListener('change', function () {
+        if (comboSelect.value === 'custom') {
+            customInput.classList.remove('hidden-input')
+            customInput.focus()
+            //comboSelect.classList.add('hidden-input')
+        } else {
+            customInput.classList.add('hidden-input')
+            //deleteBtn.classList.remove('hidden-input')
+        }
+    })    
+}
+
+function descructionType() {
+    const radioInput1 = document.getElementById("flexRadio1")
+    const radioInput2 = document.getElementById("flexRadio2")
+    const textInput = document.getElementById('dest-description')
+
+    function updateDestDesc () {
+        if (radioInput2.checked) {
+            textInput.removeAttribute('disabled')
+        } else {
+            textInput.setAttribute('disabled', 'disabled')
+        }
+    }
+    radioInput1.addEventListener('change', updateDestDesc)
+    radioInput2.addEventListener('change', updateDestDesc)
+    
+    updateDestDesc()
+}
