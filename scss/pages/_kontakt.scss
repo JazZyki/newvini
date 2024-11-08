@@ -80,8 +80,8 @@
                         background-position: 0 0%;
                     }
                     &.pavel {
-                        background-image: url('../img/people/pavel.jpg');
-                        background-position: 0 0%;
+                        background-image: url('../img/people/hrna.jpg');
+                        background-position: 0 60%;
                     }
                     &.roman {
                         background-image: url('../img/people/roman.jpg');
@@ -100,6 +100,22 @@
                     }
                     &.ac-kei {
                         background-image: url('../img/likvidace/ac_kei.jpg');
+                    }
+
+                    &.talafova {
+                        background-image: url('../img/people/talafova.png');
+                    }
+
+                    &.urban {
+                        background-image: url('../img/people/urban.jpg');
+                    }
+
+                    &.broz {
+                        background-image: url('../img/people/broz.jpg');
+                    }
+
+                    &.hlavsova {
+                        background-image: url('../img/people/hlavsova.jpg');
                     }
                 }
             }

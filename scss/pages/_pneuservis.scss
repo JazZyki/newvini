@@ -1,0 +1,52 @@
+body.pneuservis {
+    .mainContent {
+        img {
+            &.logo-pneuservis {
+                display: block;
+                max-width: 500px;
+                height: auto;
+                margin: 1rem auto;
+                mix-blend-mode: multiply;
+            }
+        }
+
+        .price-included {
+            display: flex;
+            gap: 10px 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+            
+            li {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    display: inline-block;
+                    background-color: green;
+                    border-radius: 50%;
+                    top: 8px;
+                    position: absolute;
+                    left: -11px;
+                }
+            }
+        }
+
+        table {
+            tr {
+                th,
+                td {
+                    text-align: center;
+                    &:first-child {
+                        width: 150px;
+                        max-width: 150px;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

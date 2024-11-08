@@ -448,7 +448,7 @@ footer .social .yt {
   transition: 0.35s;
 }
 #header .mainMenu nav .container-fluid .nav-item:hover, #header .mainMenu nav .container-fluid .nav-item:focus {
-  box-shadow: inset 13.5em 0 0 0 #0c471b;
+  box-shadow: inset 12.5em 0 0 0 #0c471b;
   color: #fff;
 }
 #header .mainMenu nav .container-fluid .nav-item a {
@@ -542,14 +542,6 @@ footer .social .yt {
 }
 .service-inquiry .col.col-12 {
   width: calc(100% - 2rem);
-}
-.service-inquiry .col.col-12.divider {
-  width: calc(100% - 4rem);
-}
-.service-inquiry .col.col-12.divider hr {
-  height: 2px;
-  margin: 0;
-  background-color: green;
 }
 .service-inquiry .col input#file {
   width: 97%;
@@ -787,9 +779,6 @@ footer .social .yt {
 }
 .opravaKroupy .mainContent .kroupyPartneri .partneri div .partner.cp {
   background-image: url("../img/partners/cpGenerali.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 90%;
 }
 .opravaKroupy .mainContent .kroupyPartneri .partneri div .partner.triglav {
   background-image: url("../img/partners/x8.png");
@@ -1127,7 +1116,7 @@ footer .social .yt {
   border-right: 1px dotted #949494;
 }
 .cenik .mainContent .tab-content table.opravyPromackliny {
-  width: 100%;
+  width: 50%;
   margin: auto;
 }
 .cenik .mainContent .tab-content table.opravyPromackliny td:first-child,
@@ -1389,8 +1378,8 @@ footer .social .yt {
   background-position: 0 0%;
 }
 .teamBlock .image-flip .frontside .card .card-body.pavel {
-  background-image: url("../img/people/pavel.jpg");
-  background-position: 0 0%;
+  background-image: url("../img/people/hrna.jpg");
+  background-position: 0 60%;
 }
 .teamBlock .image-flip .frontside .card .card-body.roman {
   background-image: url("../img/people/roman.jpg");
@@ -1410,14 +1399,17 @@ footer .social .yt {
 .teamBlock .image-flip .frontside .card .card-body.ac-kei {
   background-image: url("../img/likvidace/ac_kei.jpg");
 }
-.teamBlock .image-flip .frontside .card .card-body.ac-kubicek {
-  background-image: url("../img/likvidace/autokubicek.jpg");
+.teamBlock .image-flip .frontside .card .card-body.talafova {
+  background-image: url("../img/people/talafova.png");
+}
+.teamBlock .image-flip .frontside .card .card-body.urban {
+  background-image: url("../img/people/urban.jpg");
 }
 .teamBlock .image-flip .frontside .card .card-body.broz {
   background-image: url("../img/people/broz.jpg");
 }
-.teamBlock .image-flip .frontside .card .card-body.urban {
-  background-image: url("../img/people/urban.jpg");
+.teamBlock .image-flip .frontside .card .card-body.hlavsova {
+  background-image: url("../img/people/hlavsova.jpg");
 }
 .teamBlock .image-flip .backside {
   width: 100%;
@@ -1634,6 +1626,46 @@ footer .social .yt {
 }
 .partneri div .partner:hover {
   transform: scale(1.15);
+}
+
+body.pneuservis .mainContent img.logo-pneuservis {
+  display: block;
+  max-width: 500px;
+  height: auto;
+  margin: 1rem auto;
+  mix-blend-mode: multiply;
+}
+body.pneuservis .mainContent .price-included {
+  display: flex;
+  gap: 10px 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+body.pneuservis .mainContent .price-included li {
+  position: relative;
+}
+body.pneuservis .mainContent .price-included li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background-color: green;
+  border-radius: 50%;
+  top: 8px;
+  position: absolute;
+  left: -11px;
+}
+body.pneuservis .mainContent table tr th,
+body.pneuservis .mainContent table tr td {
+  text-align: center;
+}
+body.pneuservis .mainContent table tr th:first-child,
+body.pneuservis .mainContent table tr td:first-child {
+  width: 150px;
+  max-width: 150px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .recenze {

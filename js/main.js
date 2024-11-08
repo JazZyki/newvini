@@ -139,4 +139,4 @@ function addCookiesBanner() {
     head.appendChild(script)
 }
 
-addCookiesBanner()
+//addCookiesBanner()
