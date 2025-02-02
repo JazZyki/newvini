@@ -128,15 +128,3 @@ function addRetargetingCode() {
 }
 
 addRetargetingCode()
-
-function addCookiesBanner() {
-    const head = document.querySelector('head')
-    const script = document.createElement('script')
-    script.src = 'https://consent.cookiebot.com/uc.js'
-    script.setAttribute('type', 'text/javascript')
-    script.setAttribute('data-cbid', '17b36c11-f63b-48e0-9931-ef5233f7cb81')
-    script.setAttribute('data-blockingmode', 'auto')
-    head.appendChild(script)
-}
-
-//addCookiesBanner()

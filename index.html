@@ -56,12 +56,15 @@
         ga('require', 'displayfeatures');
         ga('send', 'pageview');
     </script>
+    <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js"></script>-->
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css" />
 </head>
 
 <body class="homePage">
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TC7NJ5N8"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TC7NJ5N8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header id="header">
         <script>
@@ -1151,6 +1154,65 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js';
+
+        CookieConsent.run({
+
+            categories: {
+                necessary: {
+                    enabled: true,  // this category is enabled by default
+                    readOnly: true  // this category cannot be disabled
+                },
+                analytics: {}
+            },
+
+            language: {
+                default: 'en',
+                translations: {
+                    en: {
+                        consentModal: {
+                            title: 'Používáme cookies',
+                            description: 'Vinicars.cz používá soubory cookies a další údaje k zajištění funkčnosti webu. Kliknutím na tlačítko „Přijmout všechny“ souhlasíte s využívaním cookies.',
+                            acceptAllBtn: 'Přijmout všechny',
+                            acceptNecessaryBtn: 'Zamítnout všechny',
+                            showPreferencesBtn: 'Upravit nastavení',
+                        },
+                        preferencesModal: {
+                            title: 'Podrobné nastavení cookies',
+                            acceptAllBtn: 'Přijmout všechny',
+                            acceptNecessaryBtn: 'Zamítnout všechny',
+                            savePreferencesBtn: 'Přijmout vybrané',
+                            closeIconLabel: 'Zavřít okno',
+                            sections: [
+                                {
+                                    title: 'Někdo tu řekl sušenky?',
+                                    description: 'Chci taky jednu! <br />Ale nejdřív si vyberte, které můžeme použít.',
+                                },
+                                {
+                                    title: 'Cookies nezbytné pro fungování webu',
+                                    description: 'Tyto cookies jsou nezbytné pro fungování našeho webu a nelze je deaktivovat.',
+
+                                    //this field will generate a toggle linked to the 'necessary' category
+                                    linkedCategory: 'necessary'
+                                },
+                                {
+                                    title: 'Funkční a analytické cookies',
+                                    description: 'Tyto soubory cookie shromažďují informace o tom, jak používáte naše webové stránky. Všechna data jsou anonymizována a nelze je použít k vaší identifikaci.',
+                                    linkedCategory: 'analytics'
+                                },
+                                {
+                                    title: 'Více informací',
+                                    description: 'Máte-li jakékoli dotazy týkající se mých zásad týkajících se souborů cookie a vašich voleb, <a href="mailto:info@bebecha.cz">napište nám</a>.'
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>

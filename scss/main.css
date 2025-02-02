@@ -1667,6 +1667,15 @@ body.pneuservis .mainContent table tr td:first-child {
   font-weight: bold;
   text-align: left;
 }
+body.pneuservis .mainContent table tr th.rb-1 {
+  border-right: 1px solid #bcd0c7;
+}
+body.pneuservis .mainContent table tr td {
+  border-right: 1px solid #bcd0c7;
+}
+body.pneuservis .mainContent table tr td:last-child {
+  border-right: none;
+}
 
 .recenze {
   margin-top: 2rem;

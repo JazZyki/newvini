@@ -46,6 +46,20 @@ body.pneuservis {
                         text-align: left;
                     }
                 }
+
+                th {
+                    &.rb-1 {
+                        border-right: 1px solid #bcd0c7;
+                    }
+                }
+
+                td {
+                    border-right: 1px solid #bcd0c7;
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
             }
         }
     }
