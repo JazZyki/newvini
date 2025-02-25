@@ -1116,20 +1116,20 @@ footer .social .yt {
   border-right: 1px dotted #949494;
 }
 .cenik .mainContent .tab-content table.opravyPromackliny {
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 .cenik .mainContent .tab-content table.opravyPromackliny td:first-child,
 .cenik .mainContent .tab-content table.opravyPromackliny th:first-child {
-  text-align: right;
-  border-right: 2px solid #168E33;
-  padding-right: 2rem;
+  text-align: center;
 }
-.cenik .mainContent .tab-content table.opravyPromackliny th:last-child {
-  border-bottom: none;
+.cenik .mainContent .tab-content table.opravyPromackliny td:nth-child(2),
+.cenik .mainContent .tab-content table.opravyPromackliny th:nth-child(2) {
+  text-align: center;
+  border-right: 3px solid #168E33;
 }
 .cenik .mainContent .tab-content .promackliny h3 {
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
 }
 .cenik .mainContent .tab-content .kroupy h3 {

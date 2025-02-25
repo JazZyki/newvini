@@ -49,26 +49,23 @@
                     }
                 }
                 &.opravyPromackliny {
-                    width: 50%;
+                    width: 75%;
                     margin: auto;
                     td,
                     th {
                         &:first-child {
-                            text-align: right;
-                            border-right: 2px solid $baseColor;
-                            padding-right: 2rem;
+                            text-align: center;
                         }
-                    }
-                    th {
-                        &:last-child {
-                            border-bottom: none;
+                        &:nth-child(2) {
+                            text-align: center;
+                            border-right: 3px solid $baseColor;
                         }
                     }
                 }
             }
             .promackliny {
                 h3 {
-                    width: 50%;
+                    width: 75%;
                     margin: 0 auto;
                 }
             }
