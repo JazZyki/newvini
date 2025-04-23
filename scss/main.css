@@ -1399,6 +1399,12 @@ footer .social .yt {
 .teamBlock .image-flip .frontside .card .card-body.ac-kei {
   background-image: url("../img/likvidace/ac_kei.jpg");
 }
+.teamBlock .image-flip .frontside .card .card-body.ac-kubicek {
+  background-image: url("../img/likvidace/autokubicek.jpg");
+}
+.teamBlock .image-flip .frontside .card .card-body.ac-cb-tabor {
+  background-image: url("../img/likvidace/cb-tabor.jpg");
+}
 .teamBlock .image-flip .frontside .card .card-body.talafova {
   background-image: url("../img/people/talafova.png");
 }
@@ -1517,10 +1523,10 @@ footer .social .yt {
 }
 
 .oSpolecnosti .headerPicture {
-  background-image: url("../img/vinicars3.jpg");
+  background-image: url("../img/vini_profil.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20vw;
+  padding: 23vw;
   position: relative;
 }
 .oSpolecnosti .headerPicture .headerTxt {
@@ -1528,6 +1534,7 @@ footer .social .yt {
   position: absolute;
   left: 10%;
   bottom: 20px;
+  text-shadow: 0 0 7px #363636;
 }
 .oSpolecnosti .headerPicture .headerTxt h1 {
   text-align: left;

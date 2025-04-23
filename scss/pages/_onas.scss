@@ -1,15 +1,16 @@
 .oSpolecnosti {
     .headerPicture {
-        background-image: url('../img/vinicars3.jpg');
+        background-image: url('../img/vini_profil.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 20vw;
+        padding: 23vw;
         position: relative;
         .headerTxt {
             width: 80%;
             position: absolute;
             left: 10%;
             bottom: 20px;
+            text-shadow: 0 0 7px #363636;
             h1 {
                 text-align: left;
             }
