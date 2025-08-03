@@ -1396,6 +1396,9 @@ footer .social .yt {
 .teamBlock .image-flip .frontside .card .card-body.cb-auto {
   background-image: url("../img/likvidace/cb-auto.jpg");
 }
+.teamBlock .image-flip .frontside .card .card-body.brno-likvi {
+  background-image: url("../img/likvidace/brno-viden.jpg");
+}
 .teamBlock .image-flip .frontside .card .card-body.ac-kei {
   background-image: url("../img/likvidace/ac_kei.jpg");
 }
