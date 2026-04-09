@@ -35,22 +35,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         // Server settings
-        $mail->isSMTP();
-        $mail->Host = 'smtp.jazzyki.cz'; // Set the SMTP server to send through
-        $mail->SMTPAuth = true;
-        $mail->Username = 'jakub.zykl@jazzyki.cz'; // SMTP username
-        $mail->Password = 'janicka2009'; // SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+       // Kompletní vyčištěné nastavení
+       $mail->isSMTP();
+$mail->Host       = 'smtp.gmail.com';
+$mail->SMTPAuth   = true;
+$mail->Username   = 'wp.zykl@gmail.com';
+$mail->Password   = 'qbfsqqpzphoouajt'; // 16místné HESLO APLIKACE z Google účtu
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port       = 587;
 
-        // Recipients
-        $mail->setFrom('jakub.zykl@jazzyki.cz', 'Poptavka - Vinicars');
+
+// Důležité: Webglobe může vyžadovat shodu From a Username
+        $mail->setFrom('wp.zykl@gmail.com', 'Vinicars Poptavka');
         $mail->addAddress('jakub.zykl@gmail.com', 'Recipient'); // Add a recipient
         $mail->addAddress('info@vinicars.cz', 'Recipient'); // Add a recipient
 
         // Content
         $mail->isHTML(true);
-        $mail->Subject = 'Poptávka servisu - Vinicars';
+        $mail->Subject = 'Poptavka servisu - Vinicars';
         $mail->Body    = "Jméno: $name<br>
                           Příjmení: $surname<br>
                           Telefon: $phone<br>
