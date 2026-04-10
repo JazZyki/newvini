@@ -1687,6 +1687,7 @@ body.pneuservis .mainContent .price-included {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1rem;
+  list-style: none;
 }
 body.pneuservis .mainContent .price-included li {
   position: relative;
